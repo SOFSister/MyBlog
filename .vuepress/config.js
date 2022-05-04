@@ -43,7 +43,33 @@ module.exports = {
       }
     },
     //友情链接
-    "friendLink": [{
+    "friendLink": [
+      {
+        "title": "学习通",
+        "logo": "/img/friendLink/LearningPass.png",
+        "link": "https://i.chaoxing.com"
+      },
+      {
+        "title": "杭师大教务处",
+        "logo": "/img/friendLink/HZNUOffice.png",
+        "link": "http://jwxt.hznu.edu.cn"
+      },
+      {
+        "title": "学习强国题库",
+        "logo": "/img/friendLink/LearningPowerQuestionBank.png",
+        "link": "http://www.syiban.com/"
+      },
+      {
+        "title": "中国知网",
+        "logo": "/img/friendLink/ChinaKnowledgeNetwork.png",
+        "link": "https://www.cnki.net/"
+      },
+      {
+        "title": "腾讯云",
+        "logo": "/img/friendLink/TencentCloud.png",
+        "link": "https://cloud.tencent.com/"
+      },
+      {
         "title": "bilibili",
         "logo": "/img/friendLink/bilibili.png",
         "link": "https://www.bilibili.com/"
@@ -52,26 +78,6 @@ module.exports = {
         "title": "csdn",
         "logo": "/img/friendLink/csdn.png",
         "link": "https://www.csdn.net/"
-      },
-      {
-        "title": "杭师大教务处",
-        "logo": "/img/friendLink/HZNUOffice.png",
-        "link": "http://jwxt.hznu.edu.cn"
-      },
-      {
-        "title": "中国知网",
-        "logo": "/img/friendLink/ChinaKnowledgeNetwork.png",
-        "link": "https://www.cnki.net/"
-      },
-      {
-        "title": "学习强国题库",
-        "logo": "/img/friendLink/LearningPowerQuestionBank.png",
-        "link": "http://www.syiban.com/"
-      },
-      {
-        "title": "学习通",
-        "logo": "/img/friendLink/LearningPass.png",
-        "link": "https://i.chaoxing.com"
       },
       {
         "title": "Java全栈知识体系",

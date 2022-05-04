@@ -7,8 +7,14 @@ module.exports = [{
         "text": "学习",
         "icon": "reco-suggestion",
         "items": [{
+            "text": "Java",
+            "link": "/docs/Java/"
+        }, {
             "text": "SSM",
             "link": "/docs/SSM/"
+        }, {
+            "text": "Git",
+            "link": "/docs/Git/"
         }]
     },
     {
