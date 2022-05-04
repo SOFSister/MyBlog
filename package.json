@@ -1,0 +1,22 @@
+{
+  "name": "feedsheep",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "vuepress": "1.8.2",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "feedsheep's boring life",
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-ribbon-animation": "^1.1.3"
+  }
+}
