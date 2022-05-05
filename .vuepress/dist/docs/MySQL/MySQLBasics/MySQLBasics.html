@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL基础知识 | feedsheep</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="feedsheep's boring life">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.8afab5e2.css" as="style"><link rel="preload" href="/assets/js/app.de078ce9.js" as="script"><link rel="preload" href="/assets/js/3.442212e7.js" as="script"><link rel="preload" href="/assets/js/1.960485ad.js" as="script"><link rel="preload" href="/assets/js/15.cdf9a370.js" as="script"><link rel="prefetch" href="/assets/js/10.6211b36e.js"><link rel="prefetch" href="/assets/js/11.c00860a9.js"><link rel="prefetch" href="/assets/js/12.6e12ebfa.js"><link rel="prefetch" href="/assets/js/13.e03968ea.js"><link rel="prefetch" href="/assets/js/14.592f9782.js"><link rel="prefetch" href="/assets/js/16.904f330a.js"><link rel="prefetch" href="/assets/js/17.3b56fd45.js"><link rel="prefetch" href="/assets/js/18.53fdcfd1.js"><link rel="prefetch" href="/assets/js/19.7044d1c1.js"><link rel="prefetch" href="/assets/js/20.5385fdbc.js"><link rel="prefetch" href="/assets/js/21.54fc12f3.js"><link rel="prefetch" href="/assets/js/4.dc974ea7.js"><link rel="prefetch" href="/assets/js/5.1d8e4b3a.js"><link rel="prefetch" href="/assets/js/6.4a6a8a8f.js"><link rel="prefetch" href="/assets/js/7.5f56cb2b.js"><link rel="prefetch" href="/assets/js/8.d9114768.js"><link rel="prefetch" href="/assets/js/9.a0dd062f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8afab5e2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-999d3bb4><div data-v-999d3bb4><div id="loader-wrapper" class="loading-wrapper" data-v-2c578df8 data-v-999d3bb4 data-v-999d3bb4><div class="loader-main" data-v-2c578df8><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-067bd032 data-v-999d3bb4 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>feedsheep</h3> <p class="description" data-v-067bd032 data-v-067bd032>feedsheep's boring life</p> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-999d3bb4><header class="navbar" data-v-999d3bb4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="feedsheep" class="logo"> <span class="site-name">feedsheep</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link router-link-active"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-999d3bb4></div> <aside class="sidebar" data-v-999d3bb4><div class="personal-info-wrapper" data-v-e2878dae data-v-999d3bb4><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-e2878dae> <h3 class="name" data-v-e2878dae>
+    feedsheep
+  </h3> <div class="num" data-v-e2878dae><div data-v-e2878dae><h3 data-v-e2878dae>11</h3> <h6 data-v-e2878dae>文章</h6></div> <div data-v-e2878dae><h3 data-v-e2878dae>10</h3> <h6 data-v-e2878dae>标签</h6></div></div> <ul class="social-links" data-v-e2878dae></ul> <hr data-v-e2878dae></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link router-link-active"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/docs/MySQL/" aria-current="page" class="sidebar-link">MySQL专区</a></li><li><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html" aria-current="page" class="active sidebar-link">MySQL基础知识</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-067bd032 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>MySQL基础知识</h3> <!----> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-999d3bb4><main class="page"><section><div class="page-title"><h1 class="title">MySQL基础知识</h1> <div data-v-10e19382><i class="iconfont reco-account" data-v-10e19382><span data-v-10e19382>feedsheep</span></i> <i class="iconfont reco-date" data-v-10e19382><span data-v-10e19382>2022/5/6</span></i> <!----> <i class="tags iconfont reco-tag" data-v-10e19382><span class="tag-item" data-v-10e19382>MySQL</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="mysql基本"><a href="#mysql基本" class="header-anchor">#</a> mysql基本</h1> <h2 id="mysql版本区别"><a href="#mysql版本区别" class="header-anchor">#</a> mysql版本区别</h2> <ul><li>MySQL Community Server 社区版本，开源免费，但不提供官方技术支持。</li> <li>MySQL Enterprise Edition 企业版本，需付费，购买了之后可以电话支持</li> <li>MySQL Cluster 集群版，开源免费。可将几个MySQL Server封装成一个Server。</li></ul> <h2 id="mysql命令"><a href="#mysql命令" class="header-anchor">#</a> mysql命令</h2> <h3 id="登录"><a href="#登录" class="header-anchor">#</a> -登录</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>mysql <span class="token operator">-</span>u用户 <span class="token operator">-</span>p密码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="退出"><a href="#退出" class="header-anchor">#</a> -退出</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">exit</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看数据库"><a href="#查看数据库" class="header-anchor">#</a> -查看数据库</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="进入数据库"><a href="#进入数据库" class="header-anchor">#</a> -进入数据库</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">use</span> 数据库名<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看数据表"><a href="#查看数据表" class="header-anchor">#</a> -查看数据表</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="mysql的操作语句分类"><a href="#mysql的操作语句分类" class="header-anchor">#</a> <strong>mysql的操作语句分类</strong></h2> <ul><li>操作语句分为四类：</li></ul> <ol><li>DDL 数据定义语言 (Data Definition Language) 例如：建库，建表</li> <li>DML 数据操纵语言(Data Manipulation Language) 例如：对表中的数据进行增删改操作</li> <li>DQL 数据查询语言(Data Query Language) 例如：对数据进行查询</li> <li>DCL 数据控制语言(Data Control Language) 例如：对用户的权限进行设置</li></ol> <h1 id="mysql中文乱码问题-修改字符集"><a href="#mysql中文乱码问题-修改字符集" class="header-anchor">#</a> mysql中文乱码问题/修改字符集</h1> <ul><li><p>查看当前mysql使用的字符集：</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'character%'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code>mysql<span class="token operator">&gt;</span> <span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'character%'</span><span class="token punctuation">;</span>
+<span class="token operator">+</span><span class="token comment">--------------------------+----------------------------------+</span>
+<span class="token operator">|</span> Variable_name            <span class="token operator">|</span> <span class="token keyword">Value</span>                            <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------------------------+----------------------------------+</span>
+<span class="token operator">|</span> character_set_client     <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_connection <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_database   <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_filesystem <span class="token operator">|</span> <span class="token keyword">binary</span>                           <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_results    <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_server     <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_set_system     <span class="token operator">|</span> utf8                             <span class="token operator">|</span>
+<span class="token operator">|</span> character_sets_dir       <span class="token operator">|</span> <span class="token operator">/</span>usr<span class="token operator">/</span><span class="token keyword">local</span><span class="token operator">/</span>mysql<span class="token operator">/</span><span class="token keyword">share</span><span class="token operator">/</span>charsets<span class="token operator">/</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------------------------+----------------------------------+</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>character_set_client：客户端请求数据的字符集</li> <li>character_set_connection：客户端与服务器连接的字符集</li> <li>character_set_database：数据库服务器中某个库使用的字符集设定，如果建库时没有指明，将默认使用配置上的字符集</li> <li>character_set_results：返回给客户端的字符集(从数据库读取到的数据是什么编码的)</li> <li>character_set_server：为服务器安装时指定的默认字符集设定。</li> <li>character_set_system：系统字符集(修改不了的，就是utf8)</li> <li>character_sets_dir：mysql字符集文件的保存路径</li></ul></li> <li><p>解决中文乱码</p> <p>原因：cmd只能显示gbk字符</p> <ul><li><p>临时解决（重启失效）</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">set</span> names gbk<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>永久解决：修改配置文件my.cnf里边的</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token punctuation">[</span>client<span class="token punctuation">]</span>
+<span class="token keyword">default</span><span class="token operator">-</span><span class="token keyword">character</span><span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>gbk
+作用于外部的显示
+
+<span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
+character_set_server<span class="token operator">=</span>gbk
+作用于内部，会作用于创建库表时默认字符集
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li></ul></li> <li><p>修改库的字符集编码</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">database</span> xiaoxiao <span class="token keyword">default</span> <span class="token keyword">character</span> <span class="token keyword">set</span> gbk<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>修改表的字符集编码</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">table</span> employee <span class="token keyword">default</span> <span class="token keyword">character</span> <span class="token keyword">set</span> utf8<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul> <h1 id="ddl-数据定义语言"><a href="#ddl-数据定义语言" class="header-anchor">#</a> DDL 数据定义语言</h1> <h2 id="ddl-数据定义语言命令"><a href="#ddl-数据定义语言命令" class="header-anchor">#</a> DDL 数据定义语言命令</h2> <h3 id="创建数据库db1"><a href="#创建数据库db1" class="header-anchor">#</a> -创建数据库db1</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">create</span> <span class="token keyword">database</span> db1<span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="判断数据库db2是否存在-如果不存在则创建"><a href="#判断数据库db2是否存在-如果不存在则创建" class="header-anchor">#</a> -判断数据库db2是否存在，如果不存在则创建</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">create</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token operator">not</span> <span class="token keyword">exists</span> db2<span class="token punctuation">;</span>   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="创建数据库并指定字符集为-gbk"><a href="#创建数据库并指定字符集为-gbk" class="header-anchor">#</a> -创建数据库并指定字符集为 gbk</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">database</span> db3 <span class="token keyword">default</span> <span class="token keyword">character</span> <span class="token keyword">set</span> gbk<span class="token punctuation">;</span>   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="删除库"><a href="#删除库" class="header-anchor">#</a> -删除库</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">drop</span> <span class="token keyword">database</span> 库名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看当前位于哪个库"><a href="#查看当前位于哪个库" class="header-anchor">#</a> -查看当前位于哪个库</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="进入库的操作"><a href="#进入库的操作" class="header-anchor">#</a> -进入库的操作</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">use</span> 库名<span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看某个库是什么字符集"><a href="#查看某个库是什么字符集" class="header-anchor">#</a> -查看某个库是什么字符集；</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">database</span> 库名<span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看当前mysql使用的字符集"><a href="#查看当前mysql使用的字符集" class="header-anchor">#</a> -查看当前mysql使用的字符集</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'character%'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看表结构信息"><a href="#查看表结构信息" class="header-anchor">#</a> -查看表结构信息</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">desc</span> 表名<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看创建表的sql语句"><a href="#查看创建表的sql语句" class="header-anchor">#</a> -查看创建表的sql语句</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">table</span> 表名\G
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="mysql常见数据类型"><a href="#mysql常见数据类型" class="header-anchor">#</a> mysql常见数据类型</h2> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token operator">&lt;</span><span class="token number">1</span><span class="token operator">&gt;</span>整数型
+     类型      大小      范围（有符号）               范围（无符号<span class="token keyword">unsigned</span>）    用途
+     <span class="token keyword">TINYINT</span>   <span class="token number">1</span> 字节    <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">128</span>，<span class="token number">127</span><span class="token punctuation">)</span>                <span class="token punctuation">(</span><span class="token number">0</span>，<span class="token number">255</span><span class="token punctuation">)</span>                 小整数值
+     <span class="token keyword">SMALLINT</span>  <span class="token number">2</span> 字节    <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">32768</span>，<span class="token number">32767</span><span class="token punctuation">)</span>            <span class="token punctuation">(</span><span class="token number">0</span>，<span class="token number">65535</span><span class="token punctuation">)</span>               大整数值
+     <span class="token keyword">MEDIUMINT</span> <span class="token number">3</span> 字节    <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8388608</span>，<span class="token number">8388607</span><span class="token punctuation">)</span>        <span class="token punctuation">(</span><span class="token number">0</span>，<span class="token number">16777215</span><span class="token punctuation">)</span>            大整数值
+     <span class="token keyword">INT</span>       <span class="token number">4</span> 字节    <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2147483648</span>，<span class="token number">2147483647</span><span class="token punctuation">)</span>  <span class="token punctuation">(</span><span class="token number">0</span>，<span class="token number">4294967295</span><span class="token punctuation">)</span>          大整数值
+     <span class="token keyword">BIGINT</span>    <span class="token number">8</span> 字节     （）                       <span class="token punctuation">(</span><span class="token number">0</span>，<span class="token number">2</span>的<span class="token number">64</span>次方减<span class="token number">1</span><span class="token punctuation">)</span>        极大整数值
+
+<span class="token operator">&lt;</span><span class="token number">2</span><span class="token operator">&gt;</span>浮点型
+ <span class="token keyword">FLOAT</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span>d）  <span class="token number">4</span> 字节    单精度浮点型  备注：m代表总个数，d代表小数位个数
+ <span class="token keyword">DOUBLE</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span>d） <span class="token number">8</span> 字节    双精度浮点型  备注：m代表总个数，d代表小数位个数
+ 
+ <span class="token operator">&lt;</span><span class="token number">3</span><span class="token operator">&gt;</span>定点型
+ <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span>d）    依赖于M和D的值    备注：m代表总个数，d代表小数位个数
+ 
+ <span class="token operator">&lt;</span><span class="token number">4</span><span class="token operator">&gt;</span>字符串类型 
+ 类型          大小              用途
+ <span class="token keyword">CHAR</span>          <span class="token number">0</span><span class="token operator">-</span><span class="token number">255</span>字节         定长字符串
+ <span class="token keyword">VARCHAR</span>       <span class="token number">0</span><span class="token operator">-</span><span class="token number">65535</span>字节       变长字符串
+ <span class="token keyword">TINYTEXT</span>      <span class="token number">0</span><span class="token operator">-</span><span class="token number">255</span>字节         短文本字符串
+ <span class="token keyword">TEXT</span>          <span class="token number">0</span><span class="token operator">-</span><span class="token number">65535</span>字节       长文本数据
+ <span class="token keyword">MEDIUMTEXT</span>    <span class="token number">0</span><span class="token operator">-</span><span class="token number">16777215</span>字节    中等长度文本数据
+ <span class="token keyword">LONGTEXT</span>      <span class="token number">0</span><span class="token operator">-</span><span class="token number">4294967295</span>字节  极大文本数据
+ 
+ <span class="token keyword">char</span>的优缺点：存取速度比<span class="token keyword">varchar</span>更快，但是比<span class="token keyword">varchar</span>更占用空间
+ <span class="token keyword">varchar</span>的优缺点：比<span class="token keyword">char</span>省空间。但是存取速度没有<span class="token keyword">char</span>快
+ 
+ <span class="token operator">&lt;</span><span class="token number">5</span><span class="token operator">&gt;</span>时间型
+ 数据类型    字节数            格式                    备注
+ <span class="token keyword">date</span>        <span class="token number">3</span>                yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd              存储日期值
+ <span class="token keyword">time</span>        <span class="token number">3</span>                HH:mm:ss                存储时分秒
+ <span class="token keyword">year</span>        <span class="token number">1</span>                yyyy                    存储年
+ <span class="token keyword">datetime</span>    <span class="token number">8</span>                yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd HH:mm:ss     存储日期<span class="token operator">+</span>时间
+ <span class="token keyword">timestamp</span>   <span class="token number">4</span>                yyyy<span class="token operator">-</span>MM<span class="token operator">-</span>dd HH:mm:ss     存储日期<span class="token operator">+</span>时间，可作时间戳
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="mysql建表命令"><a href="#mysql建表命令" class="header-anchor">#</a> mysql建表命令</h2> <h3 id="基本语法"><a href="#基本语法" class="header-anchor">#</a> -基本语法</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">(</span>
+                  字段名<span class="token number">1</span> 字段类型<span class="token number">1</span> 约束条件<span class="token number">1</span> 说明<span class="token number">1</span><span class="token punctuation">,</span>
+                  字段名<span class="token number">2</span> 字段类型<span class="token number">2</span> 约束条件<span class="token number">2</span> 说明<span class="token number">2</span><span class="token punctuation">,</span>
+                  字段名<span class="token number">3</span> 字段类型<span class="token number">3</span> 约束条件<span class="token number">3</span> 说明<span class="token number">3</span>
+                  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="复制表"><a href="#复制表" class="header-anchor">#</a> -复制表</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">table</span> 新表名 <span class="token keyword">as</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> 旧表名 <span class="token keyword">where</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span><span class="token punctuation">(</span>注意：建议这种创建表的方式用于日常测试，因  为可能索引什么的会复制不过来<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">table</span> 新表名 <span class="token operator">like</span> 旧表名<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="约束条件"><a href="#约束条件" class="header-anchor">#</a> -约束条件</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">comment</span>         <span class="token comment">----说明解释</span>
+<span class="token operator">not</span> <span class="token boolean">null</span>        <span class="token comment">----不为空</span>
+<span class="token keyword">default</span>         <span class="token comment">----默认值</span>
+<span class="token keyword">unsigned</span>        <span class="token comment">----无符号（即正数）</span>
+<span class="token keyword">auto_increment</span>  <span class="token comment">----自增</span>
+zerofill        <span class="token comment">----自动填充</span>
+<span class="token keyword">unique</span> <span class="token keyword">key</span>      <span class="token comment">----唯一值</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="例子"><a href="#例子" class="header-anchor">#</a> -例子</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token identifier"><span class="token punctuation">`</span>episode<span class="token punctuation">`</span></span> <span class="token punctuation">(</span>
+  <span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span> <span class="token keyword">int</span> <span class="token keyword">unsigned</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>title<span class="token punctuation">`</span></span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">524</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'集标题'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>num<span class="token punctuation">`</span></span> <span class="token keyword">int</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'第几集,全局顺序'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>ordered<span class="token punctuation">`</span></span> <span class="token keyword">int</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'顺序，章里面的顺序'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>play_url<span class="token punctuation">`</span></span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">256</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'播放地址'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>chapter_id<span class="token punctuation">`</span></span> <span class="token keyword">int</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'章节主键id'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>free<span class="token punctuation">`</span></span> <span class="token keyword">tinyint</span> <span class="token keyword">DEFAULT</span> <span class="token string">'0'</span> <span class="token keyword">COMMENT</span> <span class="token string">'0表示免费，1表示首付'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>video_id<span class="token punctuation">`</span></span> <span class="token keyword">int</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'视频id'</span><span class="token punctuation">,</span>
+  <span class="token identifier"><span class="token punctuation">`</span>create_time<span class="token punctuation">`</span></span> <span class="token keyword">datetime</span> <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">'创建时间'</span><span class="token punctuation">,</span>
+  <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span><span class="token identifier"><span class="token punctuation">`</span>id<span class="token punctuation">`</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span> <span class="token keyword">ENGINE</span><span class="token operator">=</span><span class="token keyword">InnoDB</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token operator">=</span><span class="token number">12630</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CHARSET</span><span class="token operator">=</span>utf8mb3<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="mysql表结构维护与删除命令"><a href="#mysql表结构维护与删除命令" class="header-anchor">#</a> mysql表结构维护与删除命令</h2> <h3 id="修改表名"><a href="#修改表名" class="header-anchor">#</a> -修改表名</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code> <span class="token keyword">rename</span> <span class="token keyword">table</span> 旧表名 <span class="token keyword">to</span> 新表名<span class="token punctuation">;</span>
+ <span class="token keyword">rename</span> <span class="token keyword">table</span> student <span class="token keyword">to</span> <span class="token keyword">user</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="添加列"><a href="#添加列" class="header-anchor">#</a> -添加列</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code>给表添加一列：<span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">add</span> 列名 类型<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">add</span> addr <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">add</span> 列名 类型 <span class="token keyword">comment</span> <span class="token string">'说明'</span><span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">add</span> famliy <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">comment</span> <span class="token string">'学生父母'</span><span class="token punctuation">;</span>
+
+给表最前面添加一列：<span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">add</span> 列名 类型 <span class="token keyword">first</span><span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">add</span> job <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">first</span><span class="token punctuation">;</span>
+
+给表某个字段后添加一列：<span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">add</span> 列名 类型 <span class="token keyword">after</span> 字段名<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">add</span> servnumber <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span>  <span class="token keyword">after</span> id<span class="token punctuation">;</span>
+
+注意：没有给表某个字段前添加一列的说法。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="修改列表类型"><a href="#修改列表类型" class="header-anchor">#</a> -修改列表类型</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">modify</span> 列名 新类型<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">modify</span> servnumber <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="修改列名"><a href="#修改列名" class="header-anchor">#</a> -修改列名</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 change 旧列名 新列名 类型<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> change servnumber telephone <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="删除列"><a href="#删除列" class="header-anchor">#</a> -删除列</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">drop</span> 列名<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">drop</span> famliy<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="修改字符集"><a href="#修改字符集" class="header-anchor">#</a> -修改字符集</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">alter</span> <span class="token keyword">table</span> 表名 <span class="token keyword">character</span> <span class="token keyword">set</span> 字符集<span class="token punctuation">;</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> <span class="token keyword">user</span> <span class="token keyword">character</span>  <span class="token keyword">set</span> GBK<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="mysql表的删除"><a href="#mysql表的删除" class="header-anchor">#</a> -mysql表的删除</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">drop</span> <span class="token keyword">table</span> 表名；
+<span class="token keyword">drop</span> <span class="token keyword">table</span> <span class="token keyword">user</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-sql line-numbers-mode"><pre class="language-sql"><code>看表是否存在，若存在则删除表：<span class="token keyword">drop</span> <span class="token keyword">table</span> <span class="token keyword">if</span> <span class="token keyword">exists</span> 表名<span class="token punctuation">;</span>
+<span class="token keyword">drop</span> <span class="token keyword">table</span>  <span class="token keyword">if</span> <span class="token keyword">exists</span> teacher<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h1 id="dml数据操纵语言"><a href="#dml数据操纵语言" class="header-anchor">#</a> DML数据操纵语言</h1> <h2 id="插入数据"><a href="#插入数据" class="header-anchor">#</a> 插入数据</h2> <h3 id="普通插入表数据"><a href="#普通插入表数据" class="header-anchor">#</a> -普通插入表数据</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> 表名（字段名） <span class="token keyword">values</span>（字段对应值）<span class="token punctuation">;</span>
+
+<span class="token keyword">insert</span> <span class="token keyword">into</span> employee <span class="token punctuation">(</span>empno<span class="token punctuation">,</span>ename<span class="token punctuation">,</span>job<span class="token punctuation">,</span>mgr<span class="token punctuation">,</span>hiredate<span class="token punctuation">,</span>sal<span class="token punctuation">,</span>deptnu<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token string">'1000'</span><span class="token punctuation">,</span><span class="token string">'小明'</span><span class="token punctuation">,</span><span class="token string">'经理'</span><span class="token punctuation">,</span><span class="token string">'10001'</span><span class="token punctuation">,</span><span class="token string">'2019-03-03'</span><span class="token punctuation">,</span><span class="token string">'12345.23'</span><span class="token punctuation">,</span><span class="token string">'10'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">insert</span> <span class="token keyword">into</span> 表名 <span class="token keyword">values</span>（所有字段对应值）<span class="token punctuation">;</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> employee  <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token string">'1001'</span><span class="token punctuation">,</span><span class="token string">'小明'</span><span class="token punctuation">,</span><span class="token string">'经理'</span><span class="token punctuation">,</span><span class="token string">'10001'</span><span class="token punctuation">,</span><span class="token string">'2019-03-03'</span><span class="token punctuation">,</span><span class="token string">'12345.23'</span><span class="token punctuation">,</span><span class="token string">'10'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="蠕虫复制-将一张表的数据复制到另一张表中"><a href="#蠕虫复制-将一张表的数据复制到另一张表中" class="header-anchor">#</a> -蠕虫复制（将一张表的数据复制到另一张表中）</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> 表名<span class="token number">1</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> 表名<span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">insert</span> <span class="token keyword">into</span> 表名<span class="token number">1</span>（字段名<span class="token number">1</span>，字段名<span class="token number">2</span>） <span class="token keyword">select</span> 字段名<span class="token number">1</span>，字段名<span class="token number">2</span> <span class="token keyword">from</span> 表名<span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">insert</span> <span class="token keyword">into</span> emp <span class="token punctuation">(</span>empno<span class="token punctuation">,</span>ename<span class="token punctuation">)</span> <span class="token keyword">select</span> empno<span class="token punctuation">,</span>ename <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="建表复制"><a href="#建表复制" class="header-anchor">#</a> -建表复制</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">table</span> 表名<span class="token number">1</span> <span class="token keyword">as</span> <span class="token keyword">select</span> 字段名<span class="token number">1</span>，字段名<span class="token number">2</span> <span class="token keyword">from</span> 表名<span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">create</span> <span class="token keyword">table</span> emp <span class="token keyword">as</span> <span class="token keyword">select</span> empno <span class="token punctuation">,</span>ename <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="一次性插入多个数据"><a href="#一次性插入多个数据" class="header-anchor">#</a> -一次性插入多个数据</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">insert</span> <span class="token keyword">into</span> 表名  <span class="token punctuation">(</span>字段名<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span>对应值<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>对应值<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>对应值<span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="修改数据"><a href="#修改数据" class="header-anchor">#</a> 修改数据</h2> <h3 id="修改更新"><a href="#修改更新" class="header-anchor">#</a> -修改更新</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">update</span> 表名 <span class="token keyword">set</span> 字段名<span class="token number">1</span><span class="token operator">=</span>值<span class="token number">1</span> <span class="token keyword">where</span> 字段名<span class="token operator">=</span>值<span class="token punctuation">;</span>
+
+<span class="token keyword">update</span> 表名 <span class="token keyword">set</span> 字段名<span class="token number">1</span><span class="token operator">=</span>值<span class="token number">1</span><span class="token punctuation">,</span>字段名<span class="token number">2</span><span class="token operator">=</span>值<span class="token number">2</span> <span class="token keyword">where</span> 字段名<span class="token operator">=</span>值<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="删除数据"><a href="#删除数据" class="header-anchor">#</a> 删除数据</h2> <h3 id="删除"><a href="#删除" class="header-anchor">#</a> -删除</h3> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">delete</span> <span class="token keyword">from</span> 表名 <span class="token keyword">where</span> 字段名<span class="token operator">=</span>值<span class="token punctuation">;</span>
+
+ <span class="token keyword">truncate</span> <span class="token keyword">table</span> 表名<span class="token punctuation">;</span>
+ <span class="token keyword">delete</span> <span class="token keyword">from</span> 表名<span class="token punctuation">;</span>
+ <span class="token keyword">drop</span> <span class="token keyword">table</span> 表名<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="面试注意事项"><a href="#面试注意事项" class="header-anchor">#</a> -面试注意事项</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>面试时：面试官问在删改数据之前，你会怎么做？
+答案：会对数据进行备份操作，以防万一，可以进行数据回退
+
+面试时：面试官会问，delete与truncate与drop 这三种删除数据的共同点都是删除数据，他们的不同点是什么?
+delele 会把删除的操作记录给记录起来，以便数据回退，不会释放空间，而且不会删除定义。
+truncate不会记录删除操作，会把表占用的空间恢复到最初，不会删除定义
+drop会删除整张表，释放表占用的空间。
+
+删除速度：drop &gt; truncate &gt; delete
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h1 id="dql数据查询语言"><a href="#dql数据查询语言" class="header-anchor">#</a> DQL数据查询语言</h1> <h2 id="where下的各种查询"><a href="#where下的各种查询" class="header-anchor">#</a> where下的各种查询</h2> <ul><li><p>简单插叙</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+<span class="token keyword">select</span> empno<span class="token punctuation">,</span>ename<span class="token punctuation">,</span>job <span class="token keyword">as</span> ename_job <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>精确条件查询</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> ename<span class="token operator">=</span><span class="token string">'后裔'</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal <span class="token operator">!=</span> <span class="token number">50000</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal <span class="token operator">&lt;&gt;</span> <span class="token number">50000</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal <span class="token operator">&gt;</span> <span class="token number">10000</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>模糊条件查询(十万条数据以上时尽量不使用)</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'%aracter%'</span><span class="token punctuation">;</span> 
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee  <span class="token keyword">where</span> ename <span class="token operator">like</span> <span class="token string">'林%'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>范围查询</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal <span class="token operator">between</span> <span class="token number">10000</span> <span class="token operator">and</span> <span class="token number">30000</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> hiredate <span class="token operator">between</span> <span class="token string">'2011-01-01'</span> <span class="token operator">and</span> <span class="token string">'2017-12-1'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>离散查询</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> ename <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token string">'猴子'</span><span class="token punctuation">,</span><span class="token string">'林俊杰'</span><span class="token punctuation">,</span><span class="token string">'小红'</span><span class="token punctuation">,</span><span class="token string">'小胡'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>清除重复值</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> <span class="token keyword">distinct</span><span class="token punctuation">(</span>job<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>统计查询（聚合函数）</p> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token function">count</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span>或者<span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
+<span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+<span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span>ename<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+        
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  计算总和 
+<span class="token keyword">select</span> <span class="token function">sum</span><span class="token punctuation">(</span>sal<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+        
+<span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    计算最大值
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">select</span>  <span class="token function">max</span><span class="token punctuation">(</span>sal<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+<span class="token function">avg</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   计算平均值
+<span class="token keyword">select</span> <span class="token function">avg</span><span class="token punctuation">(</span>sal<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+        
+<span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   计算最低值
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">where</span> sal<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">select</span>  <span class="token function">min</span><span class="token punctuation">(</span>sal<span class="token punctuation">)</span> <span class="token keyword">from</span> employee<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+concat函数： 起到连接作用
+<span class="token keyword">select</span> concat<span class="token punctuation">(</span>ename<span class="token punctuation">,</span><span class="token string">' 是 '</span><span class="token punctuation">,</span>job<span class="token punctuation">)</span> <span class="token keyword">as</span> aaaa <span class="token keyword">from</span> employee<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></li></ul> <h2 id="group-by分组查询-分组"><a href="#group-by分组查询-分组" class="header-anchor">#</a> group by分组查询（分组）</h2> <ul><li>作用：把行 按 字段 分组</li> <li>语法：group by 列1，列2....列N</li> <li>适用场合：常用于统计场合，一般和聚合函数连用</li></ul> <div class="language-sql line-numbers-mode"><pre class="language-sql"><code><span class="token keyword">select</span> deptnu<span class="token punctuation">,</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> employee <span class="token keyword">group</span> <span class="token keyword">by</span> deptnu<span class="token punctuation">;</span>
+<span class="token operator">+</span><span class="token comment">--------+----------+</span>
+<span class="token operator">|</span> deptnu <span class="token operator">|</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------+----------+</span>
+<span class="token operator">|</span>     <span class="token number">20</span> <span class="token operator">|</span>        <span class="token number">5</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">30</span> <span class="token operator">|</span>        <span class="token number">6</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">10</span> <span class="token operator">|</span>        <span class="token number">2</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------+----------+</span>
+<span class="token keyword">select</span> deptnu<span class="token punctuation">,</span>job<span class="token punctuation">,</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> employee <span class="token keyword">group</span> <span class="token keyword">by</span> deptnu<span class="token punctuation">,</span>job<span class="token punctuation">;</span>
+<span class="token operator">+</span><span class="token comment">--------+-----------+----------+</span>
+<span class="token operator">|</span> deptnu <span class="token operator">|</span> job       <span class="token operator">|</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------+-----------+----------+</span>
+<span class="token operator">|</span>     <span class="token number">20</span> <span class="token operator">|</span> 经理      <span class="token operator">|</span>        <span class="token number">1</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">30</span> <span class="token operator">|</span> 经理      <span class="token operator">|</span>        <span class="token number">1</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">10</span> <span class="token operator">|</span> 经理      <span class="token operator">|</span>        <span class="token number">1</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">20</span> <span class="token operator">|</span> 分析师    <span class="token operator">|</span>        <span class="token number">2</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">30</span> <span class="token operator">|</span> 销售员    <span class="token operator">|</span>        <span class="token number">4</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">30</span> <span class="token operator">|</span> 文员      <span class="token operator">|</span>        <span class="token number">1</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">10</span> <span class="token operator">|</span> 文员      <span class="token operator">|</span>        <span class="token number">1</span> <span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token number">20</span> <span class="token operator">|</span> 文员      <span class="token operator">|</span>        <span class="token number">2</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">--------+-----------+----------+</span>
+<span class="token keyword">select</span> job<span class="token punctuation">,</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> employee <span class="token keyword">group</span> <span class="token keyword">by</span> job<span class="token punctuation">;</span>
+<span class="token operator">+</span><span class="token comment">-----------+----------+</span>
+<span class="token operator">|</span> job       <span class="token operator">|</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">-----------+----------+</span>
+<span class="token operator">|</span> 经理      <span class="token operator">|</span>        <span class="token number">3</span> <span class="token operator">|</span>
+<span class="token operator">|</span> 分析师    <span class="token operator">|</span>        <span class="token number">2</span> <span class="token operator">|</span>
+<span class="token operator">|</span> 销售员    <span class="token operator">|</span>        <span class="token number">4</span> <span class="token operator">|</span>
+<span class="token operator">|</span> 文员      <span class="token operator">|</span>        <span class="token number">4</span> <span class="token operator">|</span>
+<span class="token operator">+</span><span class="token comment">-----------+----------+</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="having条件查询-筛选"><a href="#having条件查询-筛选" class="header-anchor">#</a> having条件查询（筛选）</h2> <ul><li>作用：对查询的结果进行筛选操作</li> <li>语法：having 条件 或者 having 聚合函数 条件</li> <li>适用场合：一般跟在group by之后</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select job,count(*) from employee group by job having job ='文员';
++--------+----------+
+| job    | count(*) |
++--------+----------+
+| 文员   |        4 |
++--------+----------+
+select  deptnu,job,count(*) from employee group by deptnu,job having count(*)&gt;=2;
++--------+-----------+----------+
+| deptnu | job       | count(*) |
++--------+-----------+----------+
+|     20 | 分析师    |        2 |
+|     30 | 销售员    |        4 |
+|     20 | 文员      |        2 |
++--------+-----------+----------+
+select  deptnu,job,count(*) as 总数 from employee group by deptnu,job having 总数;
++--------+-----------+--------+
+| deptnu | job       | 总数   |
++--------+-----------+--------+
+|     20 | 经理      |      1 |
+|     30 | 经理      |      1 |
+|     10 | 经理      |      1 |
+|     20 | 分析师    |      2 |
+|     30 | 销售员    |      4 |
+|     30 | 文员      |      1 |
+|     10 | 文员      |      1 |
+|     20 | 文员      |      2 |
++--------+-----------+--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h2 id="order-by排序查询-排序"><a href="#order-by排序查询-排序" class="header-anchor">#</a> order by排序查询（排序）</h2> <ul><li>作用：对查询的结果进行排序操作</li> <li>语法：order by 字段1,字段2 .....</li> <li>适用场合：一般用在查询结果的排序</li> <li>asc 升序，desc 降序</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from employee order by sal asc;
++-------+-----------+-----------+------+------------+----------+--------+
+| empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-------+-----------+-----------+------+------------+----------+--------+
+|  1014 | 甄姬      | 文员      | 1007 | 2019-01-23 |  7500.00 |     10 |
+|  1001 | 小乔      | 文员      | 1013 | 2018-12-17 |  8000.00 |     20 |
+|  1012 | 安琪拉    | 文员      | 1006 | 2011-12-03 |  9500.00 |     30 |
+|  1011 | 妲己      | 文员      | 1008 | 2018-05-23 | 11000.00 |     20 |
+|  1003 | 程咬金    | 销售员    | 1006 | 2017-02-22 | 12500.00 |     30 |
+|  1005 | 后裔      | 销售员    | 1006 | 2011-09-28 | 12500.00 |     30 |
+|  1010 | 韩信      | 销售员    | 1006 | 2018-09-08 | 15000.00 |     30 |
+|  1002 | 牛魔王    | 销售员    | 1006 | 2018-02-20 | 16000.00 |     30 |
+|  1007 | 张飞      | 经理      | 1009 | 2011-09-01 | 24500.00 |     10 |
+|  1006 | 猴子      | 经理      | 1009 | 2011-05-01 | 28500.00 |     30 |
+|  1004 | 猪八戒    | 经理      | 1009 | 2001-04-02 | 29750.00 |     20 |
+|  1008 | 诸葛亮    | 分析师    | 1004 | 2017-04-19 | 30000.00 |     20 |
+|  1013 | 林俊杰    | 分析师    | 1004 | 2011-12-03 | 30000.00 |     20 |
++-------+-----------+-----------+------+------------+----------+--------+
+select  deptnu,job,count(*) as 总数 from employee group by deptnu,job having 总数&gt;=2 order by deptnu desc;
++--------+-----------+--------+
+| deptnu | job       | 总数   |
++--------+-----------+--------+
+|     30 | 销售员    |      4 |
+|     20 | 分析师    |      2 |
+|     20 | 文员      |      2 |
++--------+-----------+--------+
+
+顺序：where ---- group by ----- having ------ order by 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="limit限制查询-限制"><a href="#limit限制查询-限制" class="header-anchor">#</a> limit限制查询（限制）</h2> <ul><li>作用：对查询结果起到限制条数的作用</li> <li>语法：limit n，m n:代表起始条数值，不写默认为0；m代表：取出的条数</li> <li>适用场合：数据量过多时，可以起到限制作用</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from employee limit 4;(等于select * from employee limit 0,4;)
++-------+-----------+-----------+------+------------+----------+--------+
+| empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-------+-----------+-----------+------+------------+----------+--------+
+|  1004 | 猪八戒    | 经理      | 1009 | 2001-04-02 | 29750.00 |     20 |
+|  1006 | 猴子      | 经理      | 1009 | 2011-05-01 | 28500.00 |     30 |
+|  1007 | 张飞      | 经理      | 1009 | 2011-09-01 | 24500.00 |     10 |
+|  1008 | 诸葛亮    | 分析师    | 1004 | 2017-04-19 | 30000.00 |     20 |
++-------+-----------+-----------+------+------------+----------+--------+
+
+select * from employee limit 4,5;
++-------+-----------+-----------+------+------------+----------+--------+
+| empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-------+-----------+-----------+------+------------+----------+--------+
+|  1013 | 林俊杰    | 分析师    | 1004 | 2011-12-03 | 30000.00 |     20 |
+|  1002 | 牛魔王    | 销售员    | 1006 | 2018-02-20 | 16000.00 |     30 |
+|  1003 | 程咬金    | 销售员    | 1006 | 2017-02-22 | 12500.00 |     30 |
+|  1005 | 后裔      | 销售员    | 1006 | 2011-09-28 | 12500.00 |     30 |
+|  1010 | 韩信      | 销售员    | 1006 | 2018-09-08 | 15000.00 |     30 |
++-------+-----------+-----------+------+------------+----------+--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="exists型子查询"><a href="#exists型子查询" class="header-anchor">#</a> exists型子查询</h2> <ul><li>exists型子查询后面是一个受限的select查询语句</li> <li>exists子查询，如果exists后的内层查询能查出数据，则返回 TRUE 表示存在；为空则返回 FLASE则不存在。</li></ul> <p>语法</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>分为俩种：exists跟 not exists
+select * from 表名 a where exists (select 1 from 表名2 where 条件);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>查询出公司有员工的部门的详细信息
+select * from dept d where exists (select 1 from employee e where e.deptnu = d.deptnu);
++--------+-----------+--------+
+| deptnu | dname     | addr   |
++--------+-----------+--------+
+|     10 | 研发部    | 北京   |
+|     20 | 工程部    | 上海   |
+|     30 | 销售部    | 广州   |
++--------+-----------+--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="左连接查询与右连接查询"><a href="#左连接查询与右连接查询" class="header-anchor">#</a> 左连接查询与右连接查询</h2> <ul><li>左连接称之为左外连接 右连接称之为右外连接 这俩个连接都是属于外连接</li> <li>左连接关键字：left join 表名 on 条件 / left outer 表名 join on 条件</li> <li>右连接关键字：right join 表名 on 条件/ right outer 表名 join on 条件</li> <li>左连接说明： left join 是left outer join的简写，左(外)连接，左表(a_table)的记录将会全部表示出来， 而右表(b_table)只会显示符合搜索条件的记录。右表记录不足的地方均为NULL。</li> <li>右连接说明：right join是right outer join的简写，与左(外)连接相反，右(外)连接，左表(a_table)只会显示符合搜索条件的记录，而右表(b_table)的记录将会全部表示出来。左表记录不足的地方均为NULL。</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>列出部门名称和这些部门的员工信息，同时列出那些没有的员工的部门
+select d.dname,e.* from dept d left join employee e on d.deptnu = e.deptnu;
++-----------+-------+-----------+-----------+------+------------+----------+--------+
+| dname     | empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-----------+-------+-----------+-----------+------+------------+----------+--------+
+| 研发部    |  1014 | 甄姬      | 文员      | 1007 | 2019-01-23 |  7500.00 |     10 |
+| 研发部    |  1007 | 张飞      | 经理      | 1009 | 2011-09-01 | 24500.00 |     10 |
+| 工程部    |  1001 | 小乔      | 文员      | 1013 | 2018-12-17 |  8000.00 |     20 |
+| 工程部    |  1011 | 妲己      | 文员      | 1008 | 2018-05-23 | 11000.00 |     20 |
+| 工程部    |  1013 | 林俊杰    | 分析师    | 1004 | 2011-12-03 | 30000.00 |     20 |
+| 工程部    |  1008 | 诸葛亮    | 分析师    | 1004 | 2017-04-19 | 30000.00 |     20 |
+| 工程部    |  1004 | 猪八戒    | 经理      | 1009 | 2001-04-02 | 29750.00 |     20 |
+| 销售部    |  1012 | 安琪拉    | 文员      | 1006 | 2011-12-03 |  9500.00 |     30 |
+| 销售部    |  1010 | 韩信      | 销售员    | 1006 | 2018-09-08 | 15000.00 |     30 |
+| 销售部    |  1005 | 后裔      | 销售员    | 1006 | 2011-09-28 | 12500.00 |     30 |
+| 销售部    |  1003 | 程咬金    | 销售员    | 1006 | 2017-02-22 | 12500.00 |     30 |
+| 销售部    |  1002 | 牛魔王    | 销售员    | 1006 | 2018-02-20 | 16000.00 |     30 |
+| 销售部    |  1006 | 猴子      | 经理      | 1009 | 2011-05-01 | 28500.00 |     30 |
+| 财务部    |  NULL | NULL      | NULL      | NULL | NULL       |     NULL |   NULL |
++-----------+-------+-----------+-----------+------+------------+----------+--------+
+
+
+列出所有员工信息包括他们所属的部门
+ select d.dname,e.* from employee e left join dept d on d.deptnu = e.deptnu;
+ +-----------+-------+-----------+-----------+------+------------+----------+--------+
+| dname     | empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-----------+-------+-----------+-----------+------+------------+----------+--------+
+| 工程部    |  1004 | 猪八戒    | 经理      | 1009 | 2001-04-02 | 29750.00 |     20 |
+| 销售部    |  1006 | 猴子      | 经理      | 1009 | 2011-05-01 | 28500.00 |     30 |
+| 研发部    |  1007 | 张飞      | 经理      | 1009 | 2011-09-01 | 24500.00 |     10 |
+| 工程部    |  1008 | 诸葛亮    | 分析师    | 1004 | 2017-04-19 | 30000.00 |     20 |
+| 工程部    |  1013 | 林俊杰    | 分析师    | 1004 | 2011-12-03 | 30000.00 |     20 |
+| 销售部    |  1002 | 牛魔王    | 销售员    | 1006 | 2018-02-20 | 16000.00 |     30 |
+| 销售部    |  1003 | 程咬金    | 销售员    | 1006 | 2017-02-22 | 12500.00 |     30 |
+| 销售部    |  1005 | 后裔      | 销售员    | 1006 | 2011-09-28 | 12500.00 |     30 |
+| 销售部    |  1010 | 韩信      | 销售员    | 1006 | 2018-09-08 | 15000.00 |     30 |
+| 销售部    |  1012 | 安琪拉    | 文员      | 1006 | 2011-12-03 |  9500.00 |     30 |
+| 研发部    |  1014 | 甄姬      | 文员      | 1007 | 2019-01-23 |  7500.00 |     10 |
+| 工程部    |  1011 | 妲己      | 文员      | 1008 | 2018-05-23 | 11000.00 |     20 |
+| 工程部    |  1001 | 小乔      | 文员      | 1013 | 2018-12-17 |  8000.00 |     20 |
++-----------+-------+-----------+-----------+------+------------+----------+--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h2 id="内连接查询"><a href="#内连接查询" class="header-anchor">#</a> 内连接查询</h2> <ul><li>内连接：获取两个表中字段匹配关系的记录</li> <li>主要语法：INNER JOIN 表名 ON 条件;</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>想查出员工张飞的所在部门的地址
+select d.addr from employee e inner join dept d on d.deptnu = e.deptnu and e.ename = '张飞';
+或者
+select d.addr from employee e,dept d where d.deptnu = e.deptnu and e.ename = '张飞';
++--------+
+| addr   |
++--------+
+| 北京   |
++--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="联合查询"><a href="#联合查询" class="header-anchor">#</a> 联合查询</h2> <ul><li><p>联合查询：就是把多个查询语句的查询结果结合在一起</p></li> <li><p>(1)两个select语句的查询结果的“字段数”必须一致；</p> <p>(2)通常，也应该让两个查询语句的字段类型具有一致性；</p> <p>(3)也可以联合更多的查询结果；</p> <p>(4)用到order by排序时，需要加上limit（加上最大条数就行），需要对子句用括号括起来</p></li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>对销售员的工资从低到高排序，而文员的工资从高到低排序
+(select * from employee a where a.job = '销售员'  order by a.sal limit 999999 ) union  (select * from employee b where b.job = '文员' order by b.sal desc limit 999999);
+
++-------+-----------+-----------+------+------------+----------+--------+
+| empno | ename     | job       | mgr  | hiredate   | sal      | deptnu |
++-------+-----------+-----------+------+------------+----------+--------+
+|  1003 | 程咬金    | 销售员    | 1006 | 2017-02-22 | 12500.00 |     30 |
+|  1005 | 后裔      | 销售员    | 1006 | 2011-09-28 | 12500.00 |     30 |
+|  1010 | 韩信      | 销售员    | 1006 | 2018-09-08 | 15000.00 |     30 |
+|  1002 | 牛魔王    | 销售员    | 1006 | 2018-02-20 | 16000.00 |     30 |
+|  1011 | 妲己      | 文员      | 1008 | 2018-05-23 | 11000.00 |     20 |
+|  1012 | 安琪拉    | 文员      | 1006 | 2011-12-03 |  9500.00 |     30 |
+|  1001 | 小乔      | 文员      | 1013 | 2018-12-17 |  8000.00 |     20 |
+|  1014 | 甄姬      | 文员      | 1007 | 2019-01-23 |  7500.00 |     10 |
++-------+-----------+-----------+------+------------+----------+--------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h1 id="dcl数据控制语言"><a href="#dcl数据控制语言" class="header-anchor">#</a> DCL数据控制语言</h1> <ul><li><p>什么是DCL数据控制语言？</p> <p>数据控制语言（DCL：Data Control Language）是用来设置或者更改数据库用户或角色权限的语句，这些语句包括GRANT、DENY、REVOKE等语句</p></li></ul> <h2 id="mysql限制root用户指定ip登录"><a href="#mysql限制root用户指定ip登录" class="header-anchor">#</a> mysql限制root用户指定ip登录</h2> <h3 id="查看root用户可以在哪台机器登录"><a href="#查看root用户可以在哪台机器登录" class="header-anchor">#</a> -查看root用户可以在哪台机器登录</h3> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select user,host from mysql.user where user='root';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="修改mysql库里边的user表"><a href="#修改mysql库里边的user表" class="header-anchor">#</a> -修改mysql库里边的user表</h3> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>update mysql.user set host='localhost' where user='root';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="刷新权限"><a href="#刷新权限" class="header-anchor">#</a> -刷新权限</h3> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>flush privileges;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="mysql必备知识之用户密码"><a href="#mysql必备知识之用户密码" class="header-anchor">#</a> mysql必备知识之用户密码</h2> <h3 id="修改用户密码"><a href="#修改用户密码" class="header-anchor">#</a> -修改用户密码</h3> <ol><li><p>第一种：set password for 用户@ip = password('密码');</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>  set password for root@localhost = password('root');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第二种：mysqladmin -u用户 -p旧密码 password 新密码;</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysqladmin -urootmysqladmin -uroot -proot password;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第三种：update mysql.user set authentication_string=password('密码') where user='用户' and host='ip';</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>update mysql.user set authentication_string=password('root') where user='root' and host='localhost';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <h3 id="忘记密码"><a href="#忘记密码" class="header-anchor">#</a> -忘记密码</h3> <ol><li>第一步：修改配置文件my.cnf (默认在/etc/my.cnf)，在[mysqld]下面加上 skip-grant-tables （跳过权限的意思）</li> <li>第二步：重启mysql服务</li> <li>第三步：mysql -uroot -p 无需密码登录进入</li> <li>第四步：修改密码</li></ol> <h2 id="创建新用户并限制ip网段登录"><a href="#创建新用户并限制ip网段登录" class="header-anchor">#</a> 创建新用户并限制ip网段登录</h2> <h3 id="创建用户的语法"><a href="#创建用户的语法" class="header-anchor">#</a> -创建用户的语法</h3> <p>create user 'username'@'host' identified by 'password';</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>username：你将创建的用户名
+
+host：指定该用户在哪个主机上可以登陆，如果是本地用户可用localhost，如果想让该用户可以从任意远程主机    登陆，可以使用通配符%
+
+password：该用户的登陆密码，密码可以为空，如果为空则该用户可以不需要密码登陆服务器
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>创建一个pig用户，并指定登录密码：123456，可以在任何一台远程主机都可以登录</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create user 'pig'@'%' identified by '123456';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>创建一个pig用户，并指定登录密码：为空，指定在120网段的机器登录</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create user 'pig'@'120.%.%.%' identified by '';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="查看权限"><a href="#查看权限" class="header-anchor">#</a> -查看权限：</h3> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>   select * from mysql.user where user='pig'\G
+    mysql&gt; show grants for 'pig'@'%';
+    +---------------------------------+
+    | Grants for pig@%                |
+    +---------------------------------+
+    | GRANT USAGE ON *.* TO 'pig'@'%' |
+    +---------------------------------+
+    USAGE：无权限的意思
+    mysql&gt; show grants for 'root'@'localhost';
+    +---------------------------------------------------------------------+
+    | Grants for root@localhost                                           |
+    +---------------------------------------------------------------------+
+    | GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION |
+    +---------------------------------------------------------------------+
+    WITH GRANT OPTION:表示这个用户拥有grant权限，即可以对其他用户授权
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="删除用户语法"><a href="#删除用户语法" class="header-anchor">#</a> -删除用户语法</h3> <p>drop user 'username'@'host';</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>   drop user 'pig'@'%';
+   delete from mysql.user where user='pig';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="库表权限授权与回收"><a href="#库表权限授权与回收" class="header-anchor">#</a> 库表权限授权与回收</h2> <h3 id="限制用户对库表的增删改查权限"><a href="#限制用户对库表的增删改查权限" class="header-anchor">#</a> -<strong>限制用户对库表的增删改查权限</strong></h3> <ul><li></li> <li><p>授权语法：grant 权限1,权限2..... on 数据库对象 to '用户'</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>grant 权限1,权限2..... on 数据库对象 to '用户'@'host' identified by 'password';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>all privileges:代表所有权限</li> <li>*.* :代表所有库所有表</li> <li>授权语法</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>对现有用户进行授权：对现有用户pig授予所有库所有表所有权限。
+grant all privileges on *.*  to 'pig';
+对没有的用户进行授权：创建一个新用户dog授予XD库的所有权限，登录密码123456，任何一台主机登录
+grant all privileges on XD.* to 'dog'@'%' identified by '123456';
+对没有的用户进行授权：创建一个新用户cat授予XD库的employee表 查与修改权限，登录密码123456，任何一台主机登录
+grant select,update on XD.employee to 'cat'@'%' identified by '123456'
+对没有的用户进行授权：对用户cat授予XD库的employee表insert 权限，登录密码123456，任何一台主机登录
+grant insert on XD.employee to 'cat'@'%' identified by '123456';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>回收语法：revoke 权限1,权限2..... on 数据库对象 from '用户'@'host';</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>回收pig用户的所有权限（注意：并没有回收它的登录权限）
+revoke all privileges on *.*  from 'pig' @ '%';
+flush privileges;
+回收pig用户的所有权限（并回收它的登录权限）
+delete from mysql.user where user='pig';
+flush privileges;
+回收cat用户对XD库的employee的查与修改权限
+revoke select,update on XD.employee from 'cat'@'%';
+flush privileges;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h1 id="mysql的核心知识之事务实战-视图-触发器-以及存储过程"><a href="#mysql的核心知识之事务实战-视图-触发器-以及存储过程" class="header-anchor">#</a> mysql的核心知识之事务实战，视图，触发器，以及存储过程</h1> <h2 id="事务的详细解析"><a href="#事务的详细解析" class="header-anchor">#</a> 事务的详细解析</h2> <ul><li>什么是事务?</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>数据库事务通常指对数据库进行读或写的一个操作过程。有两个目的，第一个是为数据库操作提供了一个从失败中恢复到正常状态的方法，同时提供了数据库即使在异常状态下仍能保持一致性的方法；第二个是当多个应用程序在并发访问数据库时，可以在这些应用程序之间提供一个隔离方法，以防止彼此的操作互相干扰。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li><p>事务的特性（ACID）：</p> <ul><li><p>原子性(Atomicity)：事务必须是原子工作单元，一个事务中的所有语句，应该做到：要么全做，要么一个都不做；</p></li> <li><p>一致性(Consistency):让数据保持逻辑上的“合理性”，比如：小明给小红打10000块钱，既要让小明的账户减少10000，又要让小红的账户上增加10000块钱；</p></li> <li><p>隔离性(Isolation)：如果多个事务同时并发执行，但每个事务就像各自独立执行一样。</p></li> <li><p>持久性(Durability)：一个事务执行成功，则对数据来说应该是一个明确的硬盘数据更改（而不仅仅是内存中的变化）。</p></li></ul></li> <li><p>你要使用事务的话，表的引擎要为innodb引擎</p></li> <li><p>事务的开启与提交：</p> <ul><li><p>事务的开启：begin; start transaction;</p></li> <li><p>事务的提交：commit;</p></li> <li><p>事务的回滚：rollback;</p></li></ul></li> <li><p>开启autocommit（临时生效）：</p> <p>OFF（0）：表示关闭 ON （1）：表示开启</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>  mysql&gt; set autocommit=0;
+  Query OK, 0 rows affected (0.00 sec)
+  
+  mysql&gt; show variables like 'autocommit';
+  +---------------+-------+
+  | Variable_name | Value |
+  +---------------+-------+
+  | autocommit    | OFF   |
+  +---------------+-------+
+  mysql&gt; set autocommit=1;
+  Query OK, 0 rows affected (0.00 sec)
+  mysql&gt; 
+  mysql&gt; show variables like 'autocommit';
+  +---------------+-------+
+  | Variable_name | Value |
+  +---------------+-------+
+  | autocommit    | ON    |
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></li> <li><p>开启autocommit（永久生效）：</p> <p>修改配置文件：vi /etc/my.cnf 在[mysqld]下面加上：autocommit=1 记得重启服务才会生效</p></li></ul> <h2 id="视图的应用"><a href="#视图的应用" class="header-anchor">#</a> 视图的应用</h2> <ul><li>什么是视图？视图的作用是什么？</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>视图（view）是一种虚拟存在的表，是一个逻辑表，它本身是不包含数据的。作为一个select语句保存在数据字典中的。
+通过视图，可以展现基表（用来创建视图的表叫做基表base table）的部分数据，说白了视图的数据就是来自于基表
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>视图的优点是：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>1）简单：使用视图的用户完全不需要关心后面对应的表的结构、关联条件和筛选条件，对用户来说已经是过滤好的复合条件的结果集。
+
+2）安全：使用视图的用户只能访问他们被允许查询的结果集，对表的权限管理并不能限制到某个行某个列，但是通过视图就可以简单的实现。
+
+3）数据独立：一旦视图的结构确定了，可以屏蔽表结构变化对用户的影响，源表增加列对视图没有影响;源表修改列名，则可以通过修改视图来解决，不会造成对访问者的影响。
+　　
+4）不占用空间：视图是逻辑上的表，不占用内存空间
+
+总而言之，使用视图的大部分情况是为了保障数据安全性，提高查询效率。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>视图的创建以及修改</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>创建的基本语法是：
+    create view &lt;视图名称&gt; as select 语句;
+    create view &lt;视图名称&gt; (字段) as select 语句;
+    create or replace view &lt;视图名称&gt;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>修改的语法是：
+alter view &lt;视图名称&gt; as select 语句;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>视图删除语法：
+drop view &lt;视图名称&gt; ;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>视图的缺点</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code> 1)性能差：sql server必须把视图查询转化成对基本表的查询，如果这个视图是由一个复杂的多表查询所定义，那么，即使是视图的一个简单查询，sql server也要把它变成一个复杂的结合体，需要花费一定的时间。
+ 
+ 2)修改限制：当用户试图修改试图的某些信息时，数据库必须把它转化为对基本表的某些信息的修改，对于简单的试图来说，这是很方便的，但是，对于比较复杂的视图，可能是不可修改的。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="mysql-的触发器"><a href="#mysql-的触发器" class="header-anchor">#</a> mysql 的触发器</h2> <ul><li><p>什么是触发器？</p> <p>触发器就是监视某种情况，并触发某种操作</p></li> <li><p>创建触发器的语法:</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create trigger 触发器名称  after/before   insert/update/delete on 表名  
+        for each row
+        begin
+        sql语句;
+        end
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>after/before:可以设置为事件发生前或后
+insert/update/delete:它们可以在执行insert、update或delete的过程中触发
+for each row:每一行执行一次动作</p></li> <li><p>删除触发器的语法：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>drop trigger 触发器名称;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>例子</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>添加迟到记录后扣工资触发器
+delimiter //   自定义语句的结束符号
+create trigger trig_work after insert on work_time_delay
+for each row
+begin
+update employee set sal=sal-100 where empno=new.empno;
+end
+//
+
+new：指的是事件发生before或者after保存的新数据
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></li></ul> <h2 id="mysql的存储过程"><a href="#mysql的存储过程" class="header-anchor">#</a> mysql的存储过程</h2> <ul><li><p>存储过程就是把复杂的一系列操作，封装成一个过程。类似于shell，python脚本等。</p></li> <li><p>存储过程的优缺点</p> <ul><li><p>优点</p> <p>1、复杂操作，调用简单</p> <p>2、速度快</p></li> <li><p>缺点</p> <p>1、封装复杂</p> <p>2、没有灵活性</p></li></ul></li> <li><p>创建存储过程语法：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create procedure 名称 (参数....)
+        begin
+         过程体;
+         过程体;
+         end
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>参数：in|out|inout 参数名称 类型（长度）
+in：表示调用者向过程传入值（传入值可以是字面量或变量）
+out：表示过程向调用者传出值(可以返回多个值)（传出值只能是变量）
+inout：既表示调用者向过程传入值，又表示过程向调用者传出值（值只能是变量）
+
+声明变量：declare 变量名 类型(长度) default 默认值;
+给变量赋值：set @变量名=值;
+调用存储命令：call 名称(@变量名);
+删除存储过程命令：drop procedure 名称;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>查看创建的存储过程命令：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>show create procedure 名称\G;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>例子</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>创建一个简单的存储过程：
+mysql&gt; delimiter //
+mysql&gt; create procedure  name(in n int)
+    -&gt;             begin
+    -&gt;             select * from employee limit n;
+    -&gt;             end
+    -&gt; //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; set @n=5;
+    -&gt; //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; call name(@n);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt;         create procedure  name()
+  -&gt;             begin
+  -&gt;             declare  n int default 6;
+  -&gt;             select * from employee limit n;
+  -&gt;             end
+  -&gt; //
+Query OK, 0 rows affected (0.00 sec)
+mysql&gt; call name();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li></ul> <h1 id="mysql必备核心知识之索引与存储引擎的介绍"><a href="#mysql必备核心知识之索引与存储引擎的介绍" class="header-anchor">#</a> mysql必备核心知识之索引与存储引擎的介绍</h1> <h2 id="mysql的存储引擎"><a href="#mysql的存储引擎" class="header-anchor">#</a> mysql的存储引擎</h2> <p>（1）什么是数据库存储引擎？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>数据库引擎是数据库底层软件组件，不同的存储引擎提供不同的存储机制，索引技巧，锁定水平等功能，使用不同的数据库引擎，可以获得特定的功能
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>（2）如何查看引擎？</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>如何查看数据库支持的引擎
+show engines;
+
+查看当前数据的引擎：
+show create table 表名\G
+
+查看当前库所有表的引擎：
+show table status\G
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>（3）建表时指定引擎</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create table yingqin (id int,name varchar(20)) engine='InnoDB';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>（4）修改表的引擎</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table 表名 engine='MyiSAm';
+
+修改默认引擎
+    vi /etc/my.cnf
+    [mysqld]下面
+    default-storage-engine=MyIsAM
+    记得保存后重启服务
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>（5）MyISAM与InnoDB的区别</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MyISAM：支持全文索引（full text）;不支持事务;表级锁;保存表的具体行数;奔溃恢复不好
+
+Innodb：支持事务;以前的版本是不支持全文索引，但在5.6之后的版本就开始支持这个功能了;行级锁（并非绝对，当执行sql语句时不能确定范围时，也会进行锁全表例如： update table set id=3 where name like 'a%';）;不保存表的具体行数;奔溃恢复好
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>（6）总结：什么时候选择什么引擎比较好</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>MyISAM：
+     一般来说MyISAM不需要用到事务的时候
+     做很多count计算
+
+InnoDB：
+     可靠性要求高的，或者要求支持事务
+     想要用到外键约束的时候（讲外键的时候会讲）
+
+推荐：
+     推荐用InnoDB
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="mysql常用索引"><a href="#mysql常用索引" class="header-anchor">#</a> mysql常用索引</h2> <ul><li><p>什么是索引？</p> <p>索引是一个单独的，存储在磁盘中上的数据库结构，它们包含着对数据表里的所有记录的引用指针。使用索引可以快速的找出在某列或多列中有特定值的行。</p></li> <li><p>索引的优点：</p> <ol><li>通过创建唯一索引，来保证数据库表中的每一行数据的唯一性。</li> <li>可以加快数据的检索速度。</li> <li>可以保证表数据的完整性与准确性</li></ol></li> <li><p>索引的缺点：</p> <ol><li>索引需要占用物理空间。</li> <li>对表中的数据进行改动时，索引也需要跟着动态维护，降低了数据的维护速度。</li></ol></li> <li><p>索引的常见类型：</p> <ol><li>index：普通索引</li> <li>unique：唯一索引</li> <li>primary key：主键索引</li> <li>foreign key：外键索引</li> <li>fulltext: 全文索引</li> <li>组合索引</li></ol></li></ul> <h3 id="普通索引与唯一索引"><a href="#普通索引与唯一索引" class="header-anchor">#</a> -普通索引与唯一索引</h3> <ul><li><p>什么是普通索引？</p> <p>普通索引（index）顾名思义就是各类索引中最为普通的索引，主要任务就是提高查询速度。其特点是允许出现相同的索引内容，允许空（null）值</p></li> <li><p>什么是唯一索引？</p> <p>唯一索引：（unique）顾名思义就是不可以出现相同的索引内容，但是可以为空（null）值</p></li> <li><p>如何创建普通索引或者唯一索引？</p> <ul><li>创建表的时候创建</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>create table test (
+    id int(7) zerofill auto_increment not null,
+    username varchar(20),
+    servnumber varchar(30),
+    password varchar(20),
+    createtime datetime,
+    unique (id)
+)DEFAULT CHARSET=utf8;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>直接为表添加索引</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：
+     alter table 表名 add index 索引名称 (字段名称);
+ eg: 
+     alter table test add unique unique_username (username);
+     
+注意：假如没有指定索引名称时，会以默认的字段名为索引名称
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>直接创建索引</li></ul> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：create index 索引 on 表名 (字段名);
+eg：create index index_createtime on test (createtime);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>查看索引</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：show index from 表名\G
+eg: show index from test\G
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>如何删除索引</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：drop index 索引名称 on 表名;
+eg：drop index unique_username on test;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：alter table 表名 drop index 索引名;
+eg：alter table test drop index createtime;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li></ul> <h3 id="主键索引"><a href="#主键索引" class="header-anchor">#</a> -<strong>主键索引</strong></h3> <ul><li><p>什么是主键索引？</p> <p>把主键添加索引就是主键索引，它是一种特殊的唯一索引，不允许有空值，而唯一索引（unique是允许为空值的）。指定为“PRIMARY KEY”</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>主键：主键是表的某一列，这一列的值是用来标志表中的每一行数据的。
+注意：每一张表只能拥有一个主键
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>创建主键方式：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>1）创建表的时候创建
+
+2）直接为表添加主键索引
+   语法：alter table 表名 add primary key (字段名);
+   eg：alter table test add primary key (id);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>删除主键方式：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：
+alter table 表名 drop primary key;
+eg： 
+alter table test drop primary key;
+
+注意：在有自增的情况下，必须先删除自增，才可以删除主键
+
+删除自增：alter table test change id id int(7) unsigned zerofill not null;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li></ul> <h3 id="全文索引"><a href="#全文索引" class="header-anchor">#</a> -全文索引</h3> <ul><li><p>什么是全文索引？</p> <p>全文索引是将存储在数据库中的文章或者句子等任意内容信息查找出来的索引，单位是词。全文索引也是目前搜索引擎使用的一种关键技术。指定为 fulltex</p></li> <li><p>添加全文索引：</p> <ul><li><p>创建表的时候创建全文索引</p></li> <li><p>通过alter添加</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table command  add fulltext(instruction);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul></li> <li><p>使用全文索引：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from 表名 where match  (字段名) against ('检索内容');
+select * from command where match(instruction) against ('sections');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>查看匹配度：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from command where match(instruction) against ('directory');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>停止词：</p> <p>出现频率很高的词，将会使全文索引失效</p></li> <li><p>in boolean mode 模式：</p> <ul><li><p>in boolean mode：意思是指定全文检索模式为布尔全文检索（简单可以理解为是检索方式）</p></li> <li><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>select * from 表名 where match (字段名) against ('检索内容' in boolean mode);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul></li> <li><p>注意点：</p> <p>使用通配符*时，只能放在词的后边，不能放前边。</p></li> <li><p>删除全文索引：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table command drop index instruction;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>注意点汇总：</p> <ol><li>一般情况下创建全文索引的字段数据类型为 char、varchar、text 。其它字段类型不可以</li> <li>全文索引不针对非常频繁的词做索引。比如is，no，not，you，me，yes这些，我们称之为停止词</li> <li>对英文检索时忽略大小写</li></ol></li></ul> <h3 id="外键约束"><a href="#外键约束" class="header-anchor">#</a> -<strong>外键约束</strong></h3> <ul><li><p>什么是外键？</p> <p>外键就是作用于两个表数据之间的链接的一列或多列，用来保证表与表之间的数据的完整性和准确性。</p></li> <li><p>添加外键约束：</p> <ul><li><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>语法：foreign key (字段名) references 关联的表名(关联表的字段名)
+
+注意：主键跟外键的字段类型一定要相同
+
+create table的方法：
+
+CREATE TABLE `employee` (
+  `empno` int(11) NOT NULL COMMENT '雇员编号',
+  `ename` varchar(50) DEFAULT NULL COMMENT '雇员姓名',
+  `job` varchar(30) DEFAULT NULL,
+  `mgr` int(11) DEFAULT NULL COMMENT '雇员上级编号',
+  `hiredate` date DEFAULT NULL COMMENT '雇佣日期',
+  `sal` decimal(7,2) DEFAULT NULL COMMENT '薪资',
+  `deptnu` int(11) DEFAULT NULL COMMENT '部门编号',
+  PRIMARY KEY (`empno`),
+ foreign key (deptnu) references dept(deptnu)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></li> <li><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>
+ alter table的方法：
+ alter table employee add foreign key (deptnu) references dept(deptnu);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ul></li> <li><p>删除外键约束：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>注意：在干掉外键索引之前必须先把外键约束删除，才能删除索引
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt; alter table employee drop index deptnu;
+ERROR 1553 (HY000): Cannot drop index 'deptnu': needed in a foreign key constraint
+mysql&gt; 
+mysql&gt; alter table employee drop foreign key employee_ibfk_1;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; 
+mysql&gt; alter table employee drop index deptnu;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li> <li><p>注意点总结：</p> <ol><li>两个表，主键跟外键的字段类型一定要相同</li> <li>要使用外键约束表的引擎一定得是InnoDB引擎，MyISAM是不起作用的</li> <li>在干掉外键索引之前必须先把外键约束删除，才能删除索引</li></ol></li></ul> <h3 id="联合索引"><a href="#联合索引" class="header-anchor">#</a> -联合索引</h3> <ul><li><p>什么是联合索引？</p> <p>联合索引又称组合索引或者复合索引，是建立在俩列或者多列以上的索引。</p></li> <li><p>怎么来创建联合索引？</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table 表名 add index(字段1,字段2,字段3);
+
+alter table test add index(username,servnumber,password);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>怎么删除联合索引？</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>alter table test drop index username;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>为什么要使用联合索引，而不使用多个单列索引？</p> <p>联合索引的效率远远高于单列索引</p></li> <li><p>联合索引的最左原则</p></li> <li><p>注意点总结：</p> <ol><li>索引并非越多越好，过多的索引会增加数据的维护速度还有磁盘空间的浪费。</li> <li>当表的数据量很大的时候，可以考虑建立索引。</li> <li>表中经常查数据的字段，可以考虑建立索引。</li> <li>想要保证表中数据的唯一性，可以考虑建立唯一索引。</li> <li>想要保证俩张表中的数据的完整性跟准确性，可以考虑建立外键约束。</li> <li>经常对多列数据进行查询时，可以考虑建立联合索引。</li></ol></li></ul> <h1 id="sql语句优化思路"><a href="#sql语句优化思路" class="header-anchor">#</a> sql语句优化思路</h1> <h2 id="mysql的慢查询日志开启与问题定位"><a href="#mysql的慢查询日志开启与问题定位" class="header-anchor">#</a> mysql的慢查询日志开启与问题定位</h2> <ul><li><p>第一步：查看是否已经开启了慢查询日志</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt; show variables like 'slow%';
++---------------------+--------------------------------------+
+| Variable_name       | Value                                |
++---------------------+--------------------------------------+
+| slow_launch_time    | 2                                    |
+| slow_query_log      | OFF                                  |
+| slow_query_log_file | /data/mydata/xdclass-public-slow.log |
++---------------------+--------------------------------------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>第二步：开启慢查询日志</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>set global slow_query_log = on ;
+
+日志路径也可以自定义：
+
+set global slow_query_log_file = '路径';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>第三步：查看慢查询的时间临界值</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>show variables like '%long%';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第四步：设置慢查询的时间标准</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>set long_query_time=0.4;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>注意：重启mysql服务会让在交互界面设置的慢查询恢复到默认</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>永久生效的设置方法：修改配置文件 vi /etc/my.cnf
+[mysqld]
+slow_query_log = 1
+long_query_time = 0.1
+slow_query_log_file =/usr/local/mysql/mysql_slow.log
+
+最后必须重启服务才能生效！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li></ul> <h2 id="mysql的sql语句执行过程解析、开启性能详情"><a href="#mysql的sql语句执行过程解析、开启性能详情" class="header-anchor">#</a> mysql的sql语句执行过程解析、开启性能详情</h2> <ul><li><p>第一步：查看性能详情是否开启</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt; show variables like '%profiling%';
++------------------------+-------+
+| Variable_name          | Value |
++------------------------+-------+
+| have_profiling         | YES   |
+| profiling              | OFF   |
+| profiling_history_size | 15    |
++------------------------+-------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>第二步：开启性能记录功能</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>set profiling = on ;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第三步：查看性能的记录</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt; show profiles;
++----------+------------+---------------------------------------------------+
+| Query_ID | Duration   | Query                                             |
++----------+------------+---------------------------------------------------+
+|        1 | 0.00177775 | show variables like '%profiling%'                 |
+|        2 | 0.00037900 | select * from test where id='087878'              |
+|        3 | 0.34618025 | select * from test where servnumber='1367008787'  |
+|        4 | 0.31986825 | select * from test where servnumber='13670087879' |
++----------+------------+---------------------------------------------------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li> <li><p>第四步：查看语句的执行性能详情</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>mysql&gt; show profile for query 4;
++----------------------+----------+
+| Status               | Duration |
++----------------------+----------+
+| starting             | 0.000100 |
+| checking permissions | 0.000010 |
+| Opening tables       | 0.000023 |
+| init                 | 0.000045 |
+| System lock          | 0.000015 |
+| optimizing           | 0.000016 |
+| statistics           | 0.000028 |
+| preparing            | 0.000020 |
+| executing            | 0.000006 |
+| Sending data         | 0.319489 |
+| end                  | 0.000037 |
+| query end            | 0.000012 |
+| closing tables       | 0.000012 |
+| freeing items        | 0.000040 |
+| cleaning up          | 0.000017 |
++----------------------+----------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div></li> <li><p>性能线程的详细解释官方文档链接：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>https://dev.mysql.com/doc/refman/5.7/en/general-thread-states.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul> <h2 id="mysql语句优化的几个小建议"><a href="#mysql语句优化的几个小建议" class="header-anchor">#</a> mysql语句优化的几个小建议</h2> <h3 id="日常工作应该尽量避免的sql语句"><a href="#日常工作应该尽量避免的sql语句" class="header-anchor">#</a> -<strong>日常工作应该尽量避免的sql语句</strong></h3> <ul><li><p>第一个注意点：</p> <div class="language-mysql line-numbers-mode"><pre class="language-text"><code>尽量避免使用select *from ，尽量精确到想要的结果字段
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第二个注意点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>尽量避免条件使用or 会导致索引失效
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>第三个注意点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>记得加上limit 限制行数，避免数据量过大消耗性能
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><div class="language-mysql line-numbers-mode"><pre class="language-text"><code>使用模糊查询时，%放在前面是会使索引失效
+
+mysql&gt; explain select * from test where servnumber like '%1367000%'\G
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: test
+   partitions: NULL
+         type: ALL
+possible_keys: NULL
+          key: NULL
+      key_len: NULL
+          ref: NULL
+         rows: 996303
+     filtered: 11.11
+        Extra: Using where
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></li> <li><p>第五个注意点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>要小心条件字段类型的转换 会导致索引失效
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/MySQL/" class="prev router-link-active">
+            MySQL专区
+          </a></span> <!----></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-92abcef6><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql版本区别" class="sidebar-link reco-side-mysql版本区别" data-v-92abcef6>mysql版本区别</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql命令" class="sidebar-link reco-side-mysql命令" data-v-92abcef6>mysql命令</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#登录" class="sidebar-link reco-side-登录" data-v-92abcef6>-登录</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#退出" class="sidebar-link reco-side-退出" data-v-92abcef6>-退出</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看数据库" class="sidebar-link reco-side-查看数据库" data-v-92abcef6>-查看数据库</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#进入数据库" class="sidebar-link reco-side-进入数据库" data-v-92abcef6>-进入数据库</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看数据表" class="sidebar-link reco-side-查看数据表" data-v-92abcef6>-查看数据表</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql的操作语句分类" class="sidebar-link reco-side-mysql的操作语句分类" data-v-92abcef6>mysql的操作语句分类</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#ddl-数据定义语言命令" class="sidebar-link reco-side-ddl-数据定义语言命令" data-v-92abcef6>DDL 数据定义语言命令</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#创建数据库db1" class="sidebar-link reco-side-创建数据库db1" data-v-92abcef6>-创建数据库db1</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#判断数据库db2是否存在-如果不存在则创建" class="sidebar-link reco-side-判断数据库db2是否存在-如果不存在则创建" data-v-92abcef6>-判断数据库db2是否存在，如果不存在则创建</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#创建数据库并指定字符集为-gbk" class="sidebar-link reco-side-创建数据库并指定字符集为-gbk" data-v-92abcef6>-创建数据库并指定字符集为 gbk</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#删除库" class="sidebar-link reco-side-删除库" data-v-92abcef6>-删除库</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看当前位于哪个库" class="sidebar-link reco-side-查看当前位于哪个库" data-v-92abcef6>-查看当前位于哪个库</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#进入库的操作" class="sidebar-link reco-side-进入库的操作" data-v-92abcef6>-进入库的操作</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看某个库是什么字符集" class="sidebar-link reco-side-查看某个库是什么字符集" data-v-92abcef6>-查看某个库是什么字符集；</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看当前mysql使用的字符集" class="sidebar-link reco-side-查看当前mysql使用的字符集" data-v-92abcef6>-查看当前mysql使用的字符集</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看表结构信息" class="sidebar-link reco-side-查看表结构信息" data-v-92abcef6>-查看表结构信息</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看创建表的sql语句" class="sidebar-link reco-side-查看创建表的sql语句" data-v-92abcef6>-查看创建表的sql语句</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql常见数据类型" class="sidebar-link reco-side-mysql常见数据类型" data-v-92abcef6>mysql常见数据类型</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql建表命令" class="sidebar-link reco-side-mysql建表命令" data-v-92abcef6>mysql建表命令</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#基本语法" class="sidebar-link reco-side-基本语法" data-v-92abcef6>-基本语法</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#复制表" class="sidebar-link reco-side-复制表" data-v-92abcef6>-复制表</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#约束条件" class="sidebar-link reco-side-约束条件" data-v-92abcef6>-约束条件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#例子" class="sidebar-link reco-side-例子" data-v-92abcef6>-例子</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql表结构维护与删除命令" class="sidebar-link reco-side-mysql表结构维护与删除命令" data-v-92abcef6>mysql表结构维护与删除命令</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改表名" class="sidebar-link reco-side-修改表名" data-v-92abcef6>-修改表名</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#添加列" class="sidebar-link reco-side-添加列" data-v-92abcef6>-添加列</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改列表类型" class="sidebar-link reco-side-修改列表类型" data-v-92abcef6>-修改列表类型</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改列名" class="sidebar-link reco-side-修改列名" data-v-92abcef6>-修改列名</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#删除列" class="sidebar-link reco-side-删除列" data-v-92abcef6>-删除列</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改字符集" class="sidebar-link reco-side-修改字符集" data-v-92abcef6>-修改字符集</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql表的删除" class="sidebar-link reco-side-mysql表的删除" data-v-92abcef6>-mysql表的删除</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#插入数据" class="sidebar-link reco-side-插入数据" data-v-92abcef6>插入数据</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#普通插入表数据" class="sidebar-link reco-side-普通插入表数据" data-v-92abcef6>-普通插入表数据</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#蠕虫复制-将一张表的数据复制到另一张表中" class="sidebar-link reco-side-蠕虫复制-将一张表的数据复制到另一张表中" data-v-92abcef6>-蠕虫复制（将一张表的数据复制到另一张表中）</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#建表复制" class="sidebar-link reco-side-建表复制" data-v-92abcef6>-建表复制</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#一次性插入多个数据" class="sidebar-link reco-side-一次性插入多个数据" data-v-92abcef6>-一次性插入多个数据</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改数据" class="sidebar-link reco-side-修改数据" data-v-92abcef6>修改数据</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改更新" class="sidebar-link reco-side-修改更新" data-v-92abcef6>-修改更新</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#删除数据" class="sidebar-link reco-side-删除数据" data-v-92abcef6>删除数据</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#删除" class="sidebar-link reco-side-删除" data-v-92abcef6>-删除</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#面试注意事项" class="sidebar-link reco-side-面试注意事项" data-v-92abcef6>-面试注意事项</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#where下的各种查询" class="sidebar-link reco-side-where下的各种查询" data-v-92abcef6>where下的各种查询</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#group-by分组查询-分组" class="sidebar-link reco-side-group-by分组查询-分组" data-v-92abcef6>group by分组查询（分组）</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#having条件查询-筛选" class="sidebar-link reco-side-having条件查询-筛选" data-v-92abcef6>having条件查询（筛选）</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#order-by排序查询-排序" class="sidebar-link reco-side-order-by排序查询-排序" data-v-92abcef6>order by排序查询（排序）</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#limit限制查询-限制" class="sidebar-link reco-side-limit限制查询-限制" data-v-92abcef6>limit限制查询（限制）</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#exists型子查询" class="sidebar-link reco-side-exists型子查询" data-v-92abcef6>exists型子查询</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#左连接查询与右连接查询" class="sidebar-link reco-side-左连接查询与右连接查询" data-v-92abcef6>左连接查询与右连接查询</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#内连接查询" class="sidebar-link reco-side-内连接查询" data-v-92abcef6>内连接查询</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#联合查询" class="sidebar-link reco-side-联合查询" data-v-92abcef6>联合查询</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql限制root用户指定ip登录" class="sidebar-link reco-side-mysql限制root用户指定ip登录" data-v-92abcef6>mysql限制root用户指定ip登录</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看root用户可以在哪台机器登录" class="sidebar-link reco-side-查看root用户可以在哪台机器登录" data-v-92abcef6>-查看root用户可以在哪台机器登录</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改mysql库里边的user表" class="sidebar-link reco-side-修改mysql库里边的user表" data-v-92abcef6>-修改mysql库里边的user表</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#刷新权限" class="sidebar-link reco-side-刷新权限" data-v-92abcef6>-刷新权限</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql必备知识之用户密码" class="sidebar-link reco-side-mysql必备知识之用户密码" data-v-92abcef6>mysql必备知识之用户密码</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#修改用户密码" class="sidebar-link reco-side-修改用户密码" data-v-92abcef6>-修改用户密码</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#忘记密码" class="sidebar-link reco-side-忘记密码" data-v-92abcef6>-忘记密码</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#创建新用户并限制ip网段登录" class="sidebar-link reco-side-创建新用户并限制ip网段登录" data-v-92abcef6>创建新用户并限制ip网段登录</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#创建用户的语法" class="sidebar-link reco-side-创建用户的语法" data-v-92abcef6>-创建用户的语法</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#查看权限" class="sidebar-link reco-side-查看权限" data-v-92abcef6>-查看权限：</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#删除用户语法" class="sidebar-link reco-side-删除用户语法" data-v-92abcef6>-删除用户语法</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#库表权限授权与回收" class="sidebar-link reco-side-库表权限授权与回收" data-v-92abcef6>库表权限授权与回收</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#限制用户对库表的增删改查权限" class="sidebar-link reco-side-限制用户对库表的增删改查权限" data-v-92abcef6>-限制用户对库表的增删改查权限</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#事务的详细解析" class="sidebar-link reco-side-事务的详细解析" data-v-92abcef6>事务的详细解析</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#视图的应用" class="sidebar-link reco-side-视图的应用" data-v-92abcef6>视图的应用</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql-的触发器" class="sidebar-link reco-side-mysql-的触发器" data-v-92abcef6>mysql 的触发器</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql的存储过程" class="sidebar-link reco-side-mysql的存储过程" data-v-92abcef6>mysql的存储过程</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql的存储引擎" class="sidebar-link reco-side-mysql的存储引擎" data-v-92abcef6>mysql的存储引擎</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql常用索引" class="sidebar-link reco-side-mysql常用索引" data-v-92abcef6>mysql常用索引</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#普通索引与唯一索引" class="sidebar-link reco-side-普通索引与唯一索引" data-v-92abcef6>-普通索引与唯一索引</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#主键索引" class="sidebar-link reco-side-主键索引" data-v-92abcef6>-主键索引</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#全文索引" class="sidebar-link reco-side-全文索引" data-v-92abcef6>-全文索引</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#外键约束" class="sidebar-link reco-side-外键约束" data-v-92abcef6>-外键约束</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#联合索引" class="sidebar-link reco-side-联合索引" data-v-92abcef6>-联合索引</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql的慢查询日志开启与问题定位" class="sidebar-link reco-side-mysql的慢查询日志开启与问题定位" data-v-92abcef6>mysql的慢查询日志开启与问题定位</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql的sql语句执行过程解析、开启性能详情" class="sidebar-link reco-side-mysql的sql语句执行过程解析、开启性能详情" data-v-92abcef6>mysql的sql语句执行过程解析、开启性能详情</a></li><li class="level-2" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#mysql语句优化的几个小建议" class="sidebar-link reco-side-mysql语句优化的几个小建议" data-v-92abcef6>mysql语句优化的几个小建议</a></li><li class="level-3" data-v-92abcef6><a href="/docs/MySQL/MySQLBasics/MySQLBasics.html#日常工作应该尽量避免的sql语句" class="sidebar-link reco-side-日常工作应该尽量避免的sql语句" data-v-92abcef6>-日常工作应该尽量避免的sql语句</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a008c6ba data-v-a008c6ba><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a008c6ba><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a008c6ba></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a008c6ba></path></svg></div><div class="reco-bgm-panel" data-v-2940e5b8><audio id="bgm" src="/audio/RunAground.mp3" data-v-2940e5b8></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><img src="/img/music/RunAground.png" data-v-2940e5b8></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="reco-bgm-cover" style="background-image:url(/img/music/RunAground.png);" data-v-2940e5b8><div class="mini-operation" style="display:none;" data-v-2940e5b8><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-2940e5b8></i></div> <div class="falut-message" style="display:none;" data-v-2940e5b8>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-music music" data-v-2940e5b8></i>搁浅</div> <div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-artist" data-v-2940e5b8></i>周杰伦 / 七里香</div> <div class="reco-bgm-progress" data-v-2940e5b8><div class="progress-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div> <div class="reco-bgm-operation" data-v-2940e5b8><i class="reco-bgm reco-bgm-last last" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play play" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-next next" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-2940e5b8></i> <div class="volume-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div></div> <div class="reco-bgm-left-box" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><i class="reco-bgm reco-bgm-left" data-v-2940e5b8></i></div></div></div><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.de078ce9.js" defer></script><script src="/assets/js/3.442212e7.js" defer></script><script src="/assets/js/1.960485ad.js" defer></script><script src="/assets/js/15.cdf9a370.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unity基础知识 | feedsheep</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="feedsheep's boring life">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.8afab5e2.css" as="style"><link rel="preload" href="/assets/js/app.de078ce9.js" as="script"><link rel="preload" href="/assets/js/3.442212e7.js" as="script"><link rel="preload" href="/assets/js/1.960485ad.js" as="script"><link rel="preload" href="/assets/js/21.54fc12f3.js" as="script"><link rel="prefetch" href="/assets/js/10.6211b36e.js"><link rel="prefetch" href="/assets/js/11.c00860a9.js"><link rel="prefetch" href="/assets/js/12.6e12ebfa.js"><link rel="prefetch" href="/assets/js/13.e03968ea.js"><link rel="prefetch" href="/assets/js/14.592f9782.js"><link rel="prefetch" href="/assets/js/15.cdf9a370.js"><link rel="prefetch" href="/assets/js/16.904f330a.js"><link rel="prefetch" href="/assets/js/17.3b56fd45.js"><link rel="prefetch" href="/assets/js/18.53fdcfd1.js"><link rel="prefetch" href="/assets/js/19.7044d1c1.js"><link rel="prefetch" href="/assets/js/20.5385fdbc.js"><link rel="prefetch" href="/assets/js/4.dc974ea7.js"><link rel="prefetch" href="/assets/js/5.1d8e4b3a.js"><link rel="prefetch" href="/assets/js/6.4a6a8a8f.js"><link rel="prefetch" href="/assets/js/7.5f56cb2b.js"><link rel="prefetch" href="/assets/js/8.d9114768.js"><link rel="prefetch" href="/assets/js/9.a0dd062f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8afab5e2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-999d3bb4><div data-v-999d3bb4><div id="loader-wrapper" class="loading-wrapper" data-v-2c578df8 data-v-999d3bb4 data-v-999d3bb4><div class="loader-main" data-v-2c578df8><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-067bd032 data-v-999d3bb4 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>feedsheep</h3> <p class="description" data-v-067bd032 data-v-067bd032>feedsheep's boring life</p> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-999d3bb4><header class="navbar" data-v-999d3bb4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="feedsheep" class="logo"> <span class="site-name">feedsheep</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link router-link-active"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-999d3bb4></div> <aside class="sidebar" data-v-999d3bb4><div class="personal-info-wrapper" data-v-e2878dae data-v-999d3bb4><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-e2878dae> <h3 class="name" data-v-e2878dae>
+    feedsheep
+  </h3> <div class="num" data-v-e2878dae><div data-v-e2878dae><h3 data-v-e2878dae>11</h3> <h6 data-v-e2878dae>文章</h6></div> <div data-v-e2878dae><h3 data-v-e2878dae>10</h3> <h6 data-v-e2878dae>标签</h6></div></div> <ul class="social-links" data-v-e2878dae></ul> <hr data-v-e2878dae></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link router-link-active"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/docs/Unity/" aria-current="page" class="sidebar-link">Unity专区</a></li><li><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html" aria-current="page" class="active sidebar-link">Unity基础知识</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-067bd032 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>Unity基础知识</h3> <!----> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-999d3bb4><main class="page"><section><div class="page-title"><h1 class="title">Unity基础知识</h1> <div data-v-10e19382><i class="iconfont reco-account" data-v-10e19382><span data-v-10e19382>feedsheep</span></i> <i class="iconfont reco-date" data-v-10e19382><span data-v-10e19382>2022/5/5</span></i> <!----> <i class="tags iconfont reco-tag" data-v-10e19382><span class="tag-item" data-v-10e19382>Unity</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="_1切换场景"><a href="#_1切换场景" class="header-anchor">#</a> 1切换场景</h2> <h3 id="_1-1同步加载场景"><a href="#_1-1同步加载场景" class="header-anchor">#</a> 1.1同步加载场景</h3> <p><strong>同步加载的过程会阻塞线程</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>SceneManager.LoadScene(1);//跳转到场景1
+SceneManager.LoadScene(&quot;Sence/scene1&quot;);//跳转到场景Sence/scene1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>若想保留原来的场景</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>SceneManager.LoadScene(1,LoadSceneMode.Additive);//跳转到场景1,并保留原场景
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_1-2异步加载场景"><a href="#_1-2异步加载场景" class="header-anchor">#</a> 1.2异步加载场景</h3> <p><strong>异步不会阻塞线程，可以在加载时执行一些代码，例如同步每个玩家的加载进度</strong></p> <p>使用异步加载通常使用<strong>携程</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>SceneManager.LoadSceneAsync(1);//跳转到场景1
+SceneManager.LoadSceneAsync(&quot;Sence/scene1&quot;);//跳转到场景Sence/scene1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>返回值会返回一个<em>AsyncOperation</em>类</p> <p><strong>Q1</strong>：<em>AsyncOperation</em>类有什么用？</p> <ul><li>AsyncOperation.isDone用来判断是否加载完成，实际上用到较少，因为当加载完毕且开启跳转，跳转成功了才会变为完成</li> <li>AsyncOperation.allowSceneActivation加载完成后是否允许跳转。若我们不允许，即便加载完成了也不能跳转</li> <li>AsyncOperation. progress表示加载进度，实际上到0.9就已经加载完了，如果需要按这个进度实现加载进度条，需要做一些处理</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>private IEnumerator Load()
+{
+    AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(&quot;Sence/scene1&quot;);
+    asyncOperation.allowSceneActivation = false;//不允许跳转
+    while (asyncOperation.progress &lt; 0.9f)//判断场景是否加载完成
+    {
+        Debug.Log(&quot;当前的加载进度是:&quot; + asyncOperation.progress);
+        yield return null;//等待一帧
+    }
+    asyncOperation.allowSceneActivation = true;//加载完成允许跳转
+    if (asyncOperation.isDone)//判断是否跳转成功
+    {
+        Debug.Log(&quot;加载跳转完毕&quot;);
+    }
+    else
+    {
+        Debug.Log(&quot;还没加载跳转完毕&quot;);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="_1-3加载场景时保留物体"><a href="#_1-3加载场景时保留物体" class="header-anchor">#</a> 1.3加载场景时保留物体</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>GameObject cube = GameObject.Find(&quot;Cube&quot;);
+DontDestroyOnLoad(cube);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_2游戏物体"><a href="#_2游戏物体" class="header-anchor">#</a> 2游戏物体</h2> <h3 id="_2-1加载resource内的物体"><a href="#_2-1加载resource内的物体" class="header-anchor">#</a> 2.1加载Resource内的物体</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>GameObject gameObject = Resource.Load&lt;GameObject&gt;(&quot;hero&quot;);//加载hero
+GameObject.Instantiate(gameObject);//克隆物体
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-2通过脚本控制物体"><a href="#_2-2通过脚本控制物体" class="header-anchor">#</a> 2.2通过脚本控制物体</h3> <p><strong>增加</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>GameObject newObject = GameObject.Instantiate(gameObject);
+//把物体放到某个物体下
+newObject.transform.parent = gameObjectParent;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>删除</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Destroy(gameObject);
+Destroy(gameObject,5);//5秒后销毁
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>查找</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>GameObject gameObject1 = GameObject.Find(&quot;cube&quot;);//按照路径查找
+GameObject gameObject2 = GameObject.FindGameObjectWithTag(&quot;player&quot;);//按照标签查找
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>显示/隐藏</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.SetActive(false);//隐藏
+gameObject.SetActive(true);//显示
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>修改名称</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.name = &quot;Cube&quot;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>修改位置</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//修改世界坐标
+gameObject.transform.position = Vector3.zero;//Vector3.zero表示世界坐标的原点，相当于0,0,0
+//修改局部坐标
+gameObject.transform.localPosition = new Vector3(0,0,0);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>缩放</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.transform.localScale = new Vector3(5,5,5);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>旋转</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.transform.rotation = Quaternion.Euler(0,90,90);
+gameObject.transform.eulerAngles = new Vector3(0,90,90);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_3组件管理"><a href="#_3组件管理" class="header-anchor">#</a> 3组件管理</h2> <h3 id="_3-1添加组件"><a href="#_3-1添加组件" class="header-anchor">#</a> 3.1添加组件</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.AddComponent&lt;AudioSource&gt;();//添加音频源组件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-2查找组件"><a href="#_3-2查找组件" class="header-anchor">#</a> 3.2查找组件</h3> <h4 id="_3-2-1单个查找"><a href="#_3-2-1单个查找" class="header-anchor">#</a> 3.2.1单个查找</h4> <p><strong>查找自身</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.GetComponent&lt;Text&gt;();//查找Text组件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>查找自身及子物体</strong></p> <p>先找自身，若找不到组件，再找子物体</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.GetComponentInChildren&lt;Text&gt;();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>查找自身及父物体</strong></p> <p>先找自身，若找不到组件，再找父物体</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.GetComponentInParent&lt;Text&gt;();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="_3-2-2查找多个同类型组件"><a href="#_3-2-2查找多个同类型组件" class="header-anchor">#</a> 3.2.2查找多个同类型组件</h4> <p>返回存放组件的数组</p> <p><strong>查找自身</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>AudioSource[] audioSource = gameObject.GetComponents&lt;AudioSource&gt;();//查找AudioSource组件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>查找自身及子物体</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>AudioSource[] audioSource = gameObject.GetComponentsInChildren&lt;AudioSource&gt;();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>查找自身及父物体</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>AudioSource[] audioSource = gameObject.GetComponentsInParent&lt;AudioSource&gt;();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-3激活-关闭组件"><a href="#_3-3激活-关闭组件" class="header-anchor">#</a> 3.3激活/关闭组件</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>gameObject.GetComponents&lt;AudioSource&gt;().enabled = false;//关闭组件
+gameObject.GetComponents&lt;AudioSource&gt;().enabled = true;//激活组件
+//关闭自身代码组件
+this.enabled=false;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_3-4删除组件"><a href="#_3-4删除组件" class="header-anchor">#</a> 3.4删除组件</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>AudioSource audioSource = gameObject.GetComponents&lt;AudioSource&gt;();
+Destroy(audioSource);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="_4ugui图形交互系统"><a href="#_4ugui图形交互系统" class="header-anchor">#</a> 4UGUI图形交互系统</h2> <h3 id="_4-1输入框-inputfield"><a href="#_4-1输入框-inputfield" class="header-anchor">#</a> 4.1输入框 InputField</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>InputField inputField = transform.Find(&quot;UserInputField&quot;).GetComponent&lt;InputField&gt;();//获取组件
+string str = inputField.text;//获取输入框的值
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_4-2按钮-button"><a href="#_4-2按钮-button" class="header-anchor">#</a> 4.2按钮 Button</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Button button = transform.Find(&quot;LoginBtn&quot;).GetComponent&lt;Button&gt;();//获取组件
+//添加点击事件
+button.onClick.AddListener(LoginBtnOnClick);//目标函数需要无返回值
+void LoginBtnOnClick()
+{
+	//打开网站
+    Application.OpenURL(&quot;https://lol.qq.com/main.shtml&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_4-3图片-image"><a href="#_4-3图片-image" class="header-anchor">#</a> 4.3图片 Image</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>public Sprite bg;
+transform.Find(&quot;BG&quot;).GetComponent&lt;Image&gt;().sprite = bg;//将图片的精灵修改为bg
+//获取Image的宽高
+float width = transform.Find(&quot;BG&quot;).GetComponent&lt;Image&gt;().sizeDelta.x;//宽
+float height = transform.Find(&quot;BG&quot;).GetComponent&lt;Image&gt;().sizeDelta.y;//高
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>Outline组件可以加描边</li> <li>Shadow组件可以加投影</li></ul> <h3 id="_4-4文本-text"><a href="#_4-4文本-text" class="header-anchor">#</a> 4.4文本 Text</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>transform.Find(&quot;Text&quot;).GetComponent&lt;Text&gt;().text = &quot;...&quot;;//修改文本框的文本
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_4-5开关-toggle"><a href="#_4-5开关-toggle" class="header-anchor">#</a> 4.5开关 Toggle</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Toggle toggle = transform.Find(&quot;Toggle&quot;).GetComponent&lt;Toggle&gt;();
+//勾选框是否勾选
+if(toggle.isOn){
+    //...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>可以使用开关组组件Toggle Group实现单选</p> <h3 id="_4-6滑动条-slider"><a href="#_4-6滑动条-slider" class="header-anchor">#</a> 4.6滑动条 Slider</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Slider slider = transform.Find(&quot;Slider&quot;).GetComponent&lt;Slider&gt;();
+//滑动条值改变事件
+slider.onValueChanged.AddListener(OnValueChanged);
+void OnValueChanged(float value)//必须要有float形参
+{
+	Debug.Log(slider.value);//打印滑动条的值 range(0,1)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>通过两个Image实现滑动条效果</strong></p> <p><img src="/UnityBasicKnowledge.assets/image-20220207210732582.png" alt="image-20220207210732582"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Image image = ...;
+image.fillAmount = 0.38f;//进度条调整到38%的位置处
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_4-7滚动窗口"><a href="#_4-7滚动窗口" class="header-anchor">#</a> 4.7滚动窗口</h3> <ul><li>Grid Layout Group网格布局组件</li> <li>Horizontal Layout Group水平布局组件</li> <li>Vertical Layout Group垂直布局组件</li> <li>Layout Element布局元素</li> <li>Content Size Fitter内容尺寸适配器</li></ul> <h2 id="_5用户输入管理"><a href="#_5用户输入管理" class="header-anchor">#</a> 5用户输入管理</h2> <h3 id="_5-1虚拟轴"><a href="#_5-1虚拟轴" class="header-anchor">#</a> 5.1虚拟轴</h3> <p><strong>较多应用在对角色的控制上</strong></p> <p>可以在Edit/Project Settings/Input Manager内查看、编辑轴</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//通过wasd控制物体
+void Update()
+{
+    float horizontal = Input.GetAxis(&quot;Horizontal&quot;);//得到水平轴
+    float vertical = Input.GetAxis(&quot;Vertical&quot;);//得到垂直轴
+    if(horizontal != 0)//如果水平轴有变化，即按下AD或者←→
+    {
+        //旋转
+        //transform.position = new Vector3(transform.position.x + horizontal * 0.1f, transform.position.y, transform.position.z);
+        //位移
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + horizontal * 0.1f, transform.eulerAngles.z);
+    }
+    if(vertical != 0)//如果垂直轴有变化，即按下WS或者↑↓
+    {
+        //位移
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + vertical * 0.1f);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="_5-2获取键盘事件"><a href="#_5-2获取键盘事件" class="header-anchor">#</a> 5.2获取键盘事件</h3> <p><strong>某个键是否被持续按下</strong></p> <p>按下时为true</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetKey(&quot;a&quot;))//按住a时
+{
+    //...
+}
+if (Input.GetKey(KeyCode.A))//按住a时
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>某个键是否被按下</strong></p> <p>按下的那一瞬间为true</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetKeyDown(&quot;a&quot;))//按下a时
+{
+    //...
+}
+if (Input.GetKeyDown(KeyCode.A))//按下a时
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>某个键是否被弹起</strong></p> <p>弹起的那一瞬间为true</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetKeyUp(&quot;a&quot;))//松开a时
+{
+    //...
+}
+if (Input.GetKeyUp(KeyCode.A))//松开a时
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_5-3获取鼠标事件"><a href="#_5-3获取鼠标事件" class="header-anchor">#</a> 5.3获取鼠标事件</h3> <p>参数0是左键/1是右键/2是中键</p> <p><strong>当按钮按下</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetMouseButtonDown(0))//按下左键
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>当按钮抬起</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetMouseButtonUp(0))//松开左键
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>当按钮持续按下</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetMouseButton(0))//按住左键
+{
+	//...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>鼠标位置获取</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//鼠标左键按下时，图片跟随鼠标移动
+bool isDown = false;
+void Update()
+{
+	if (Input.GetMouseButtonDown(0))//左键按下时
+    {
+		isDown = true;
+	}
+	if (Input.GetMouseButtonUp(0))//左键松开时
+	{
+		isDown = false;
+	}
+	if (isDown)
+	{
+		GameObject gameObject = GameObject.Find(&quot;Canvas/Image&quot;);//得到需要跟随的图片
+		gameObject.transform.position = Input.mousePosition;//得到鼠标的位置
+	}
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="_5-4移动设备输入"><a href="#_5-4移动设备输入" class="header-anchor">#</a> 5.4移动设备输入</h3> <p><strong>Input.touchCount</strong></p> <p>最后一帧有多少根手指触碰到了，不同设备能追踪到的数量不同，苹果一般最多能支持五根手指。</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Debug.Log(&quot;当前有:&quot; + Input.touchCount + &quot;根手指触碰到了屏幕&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>Input.touches</strong></p> <p>存储每根手指状态的数组，可以通过索引来访问每根手指的一些信息</p> <ul><li>finggerid 触摸的唯一索引</li> <li>position 手指所在的位置</li> <li>deltaPosition 自上一帧到当前帧的位置变化，返回二维向量</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if(Input.touchCount &gt; 0)
+{
+    Debug.Log(&quot;当前手指信息为&quot; + Input.touches[0].finggerid);
+    Debug.Log(&quot;当前手指位置为&quot; + Input.touches[0].position);
+    Debug.Log(&quot;当前手指位置变化为&quot; + Input.touches[0].deltaPosition);  
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="_6-3d物理系统"><a href="#_6-3d物理系统" class="header-anchor">#</a> 6 3D物理系统</h2> <h3 id="_6-1刚体rigidbody"><a href="#_6-1刚体rigidbody" class="header-anchor">#</a> 6.1刚体Rigidbody</h3> <p><strong>常用属性</strong></p> <ul><li>Mass 质量：不同物体间的质量最好不要超过一百倍</li> <li>Drag 阻力：空气阻力，影响直线移动效果</li> <li>Angular Drag 角阻力：影响旋转效果</li> <li>Use Gravity 使用重力</li> <li>Is Kinematic 是否符合运动学：若勾选会导致物体不受物理引擎的驱动，仅拥有碰撞模型，可与其他物理发生碰撞</li> <li>Collision Detection 碰撞检测</li> <li>Constraints 约束条件：冻结某个轴的位置或旋转不受物理效果影响</li></ul> <p><strong>刚体休眠和唤醒</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Rigidbody rig = transform.GetComponent&lt;Rigidbody&gt;();
+rig.Sleep();//强制刚体休眠
+rig.WakeUp();//唤醒休眠中的刚体
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_6-2恒力constant-force"><a href="#_6-2恒力constant-force" class="header-anchor">#</a> 6.2恒力Constant Force</h3> <p><strong>常用属性</strong></p> <ul><li>Force 绝对力：施加在世界坐标的力，按照世界坐标来移动</li> <li>Relative Force 相对力：施加在本地坐标的力，按照本地坐标来移动</li> <li>Torque 绝对扭矩力：施加在世界坐标的扭矩力，按照世界坐标来旋转</li> <li>Relative Torque 相对扭矩力：施加在本地坐标的扭矩力，按照本地坐标来旋转</li></ul> <p><strong>常用api</strong></p> <p><img src="/UnityBasicKnowledge.assets/image-20220214192632921.png" alt="image-20220214192632921"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Rigidbody rig = transform.GetComponent&lt;Rigidbody&gt;();
+//刚体速度
+rig.velocity = new Vector3(0, 0, 5);
+//添加绝对力
+rig.AddForce(new Vector3(0, 0, 10f));
+//添加相对力
+rig.AddRelativeForce(new Vector3(0, 0, 10f));
+//添加绝对扭矩力
+rig.AddTorque(new Vector3(0, 0, 10f));
+//添加相对扭矩力
+rig.AddRelativeTorque(new Vector3(0, 0, 10f));
+//添加爆炸力(爆炸力度，爆炸位置，爆炸范围)
+rig.AddExplosionForce(500f, transform.position, 10f);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="_6-3碰撞器collider和触发器trigger"><a href="#_6-3碰撞器collider和触发器trigger" class="header-anchor">#</a> 6.3碰撞器Collider和触发器Trigger</h3> <p><strong>常用api</strong></p> <p>碰撞器</p> <p>碰撞检测条件</p> <ul><li>都需要有碰撞器组件且都不能勾选为触发器</li> <li>挂脚本的物体上有刚体组件</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//当进入碰撞器时
+private void OnCollisionEnter(Collision collision)
+{
+    //...
+}
+//当退出碰撞器时
+private void OnCollisionExit(Collision collision)
+{
+    //...
+}
+//当停留在碰撞器时被调用
+private void OnCollisionStay(Collision collision)
+{
+    //...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>触发器</p> <p>触发检测条件</p> <ul><li>都需要有碰撞器组件，至少有一个勾选为触发器</li> <li>挂脚本的物体上有刚体组件</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//当进入触发器时
+private void OnTriggerEnter(Collider other)
+{
+    //...
+}
+//当退出触发器时
+private void OnTriggerExit(Collider other)
+{
+    //...
+}
+//当停留在触发器时被调用
+private void OnTriggerStay(Collider other)
+{
+    //...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_6-4力的常用函数"><a href="#_6-4力的常用函数" class="header-anchor">#</a> 6.4力的常用函数</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Rigidbody rig = transform.GetComponent&lt;Rigidbody&gt;();
+/*在指定位置添加力*/
+//在指定位置上给物体添加力(力的向量，指定位置)
+Vector3 direction = transform.position + new Vector3(0, 10, 0) - transform.position;
+rig.AddForceAtPosition(direction, transform.position);
+
+/*在物体重心上添加力*/
+//添加绝对力
+rig.AddForce(new Vector3(0, 0, 10f));
+//添加相对力
+rig.AddRelativeForce(new Vector3(0, 0, 10f));
+//添加绝对扭矩力
+rig.AddTorque(new Vector3(0, 0, 10f));
+//添加相对扭矩力
+rig.AddRelativeTorque(new Vector3(0, 0, 10f));
+//添加爆炸力(爆炸力度，爆炸位置，爆炸范围)
+rig.AddExplosionForce(500f, transform.position, 10f);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_6-5物理材质"><a href="#_6-5物理材质" class="header-anchor">#</a> 6.5物理材质</h3> <p>用来模拟摩擦力和弹力</p> <h3 id="_6-6关节组件"><a href="#_6-6关节组件" class="header-anchor">#</a> 6.6关节组件</h3> <ul><li>弹簧关节</li> <li>铰链关节</li> <li>固定关节</li> <li>角色关节</li> <li>可配置关节</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>//当铰链断开时
+private void OnJointBreak(float breakForce)//参数表示用了多大力断开的
+{
+    
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_6-7射线"><a href="#_6-7射线" class="header-anchor">#</a> 6.7射线</h3> <p><strong>绘制射线</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>/*在身前绘制长度为一米的可被遮挡的持续十秒的红色射线*/
+Debug.DrawLine(transform.position, transform.position + transform.forward, Color.red, 10, true);//(开始位置，结束位置，射线颜色，持续时间，能否被遮挡)
+Debug.DrawRay(transform.position, transform.forward, Color.red, 10, true);//(开始位置，射线向量，射线颜色，持续时间，能否被遮挡)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>从相机发出的射线</strong></p> <p>重载1</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Camera camera = GameObject.Find(&quot;Camera&quot;).GetComponent&lt;Camera&gt;();
+if (Input.GetMouseButtonDown(0))//如果鼠标按下左键
+{
+    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+    if (Physics.Raycast(ray,100f))//(射线,射线射出距离)
+    {
+        Debug.Log(&quot;命中了碰撞&quot;);
+    }
+    else
+    {
+        Debug.Log(&quot;没有命中&quot;);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>重载2</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Camera camera = GameObject.Find(&quot;Camera&quot;).GetComponent&lt;Camera&gt;();
+if (Input.GetMouseButtonDown(0))//如果鼠标按下左键
+{
+    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+    RaycastHit hit;
+    if (Physics.Raycast(ray,out hit,100f))//(射线,光线碰撞到的物体,射线射出距离)
+    {
+        Debug.Log(&quot;命中了碰撞，位置是：&quot; + hit.point + &quot; 物体名称是：&quot; + hit.collider.gameObject.name);
+    }
+    else
+    {
+        Debug.Log(&quot;没有命中&quot;);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>重载3</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>if (Input.GetMouseButtonDown(0))//如果鼠标按下左键
+{
+    RaycastHit hit;
+    if (Physics.Raycast(transform.position,transform.forward,out hit,100f,layerMask))//(射线起点,射线方向,光线碰撞到的物体,射线射出距离,遮罩过滤层级（可选）)
+    {
+        Debug.Log(&quot;命中了碰撞，位置是：&quot; + hit.point + &quot; 物体名称是：&quot; + hit.collider.gameObject.name);
+    }
+    else
+    {
+        Debug.Log(&quot;没有命中&quot;);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>得到被射线命中的物体信息</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Camera camera = GameObject.Find(&quot;Camera&quot;).GetComponent&lt;Camera&gt;();
+if (Input.GetMouseButtonDown(0))//如果鼠标按下左键
+{
+    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+    RaycastHit[] hit = Physics.RaycastAll(ray, 100f);//(射线,射线射出距离)
+    for(int i = 0; i &lt; hit.Length; i++)
+    {
+    	Debug.Log(&quot;第&quot; + i + &quot;个碰撞，位置是：&quot; + hit[i].point + &quot; 物体名称是：&quot; + hit[i].collider.gameObject.name);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><strong>球形射线得到命中物体的信息</strong></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Collider[] hitColliders = Physics.OverlapSphere(transform.position, 3f);//(球心位置,射线距离)
+for (int i = 0; i &lt; hitColliders.Length; i++)
+{
+    Debug.Log(&quot;第&quot; + i + &quot;个碰撞的物体名称是：&quot; + hitColliders[i].gameObject.name);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_7-2d物理系统"><a href="#_7-2d物理系统" class="header-anchor">#</a> 7 2D物理系统</h2> <h3 id="_7-1-2d刚体-rigidbody-2d"><a href="#_7-1-2d刚体-rigidbody-2d" class="header-anchor">#</a> 7.1 2D刚体 Rigidbody 2D</h3> <p><strong>常用属性</strong></p> <ul><li>Mass 质量</li> <li>Linear Drag 线性阻尼</li> <li>Angular Drag 角阻力</li> <li>Gravity Scale 重力大小</li> <li>Collision Detection 碰撞检测</li> <li>Sleeping Mode 休眠模式</li> <li>Interpolate 插值</li> <li>Constraints 约束条件：冻结某个轴的位置或旋转不受物理效果影响</li></ul> <h2 id="_8动画系统"><a href="#_8动画系统" class="header-anchor">#</a> 8动画系统</h2> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>Animator animator = transform.GetComponent&lt;Animator&gt;();
+if (Input.GetKeyDown(KeyCode.Alpha0))
+{
+	animator.SetInteger(&quot;id&quot;, 0);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_9寻路系统"><a href="#_9寻路系统" class="header-anchor">#</a> 9寻路系统</h2> <p><strong>基本寻路</strong></p> <p>1、打开Window/AI/Navigation</p> <p>2、Bake导航场景</p> <p>3、给要导航的物体添加导航网格代理Nav Mesh Agent</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+/// &lt;summary&gt;
+/// 按下左键，移动到目标位置
+/// &lt;/summary&gt;
+public class NavigationTest : MonoBehaviour
+{
+    NavMeshAgent navMeshAgent;
+    void Start()
+    {
+        navMeshAgent = transform.GetComponent&lt;NavMeshAgent&gt;();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            bool isCollider = Physics.Raycast(ray, out hit);
+            if (isCollider)
+            {
+                navMeshAgent.SetDestination(hit.point);
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p><strong>动态障碍物</strong></p> <p>Nav Mesh Obstacle组件</p> <p>勾选Carve后，在移动障碍物后会重新Bake</p> <p><strong>分离导航连接线</strong></p> <p>Off Mesh Link组件</p> <p>更优：Nav Mesh Link（需要导入NavMeshComponents文件）</p> <p><strong>运行时动态烘焙网格</strong></p> <p>需要导入NavMeshComponents文件</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+/// &lt;summary&gt;
+/// 按下右键，在目标位置添加障碍物并重新烘焙
+/// &lt;/summary&gt;
+public class NavigationTest2 : MonoBehaviour
+{
+    public GameObject buildPrefab;
+    private NavMeshSurface navMeshSurface;
+    void Start()
+    {
+        navMeshSurface = GetComponent&lt;NavMeshSurface&gt;();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            bool isCollider = Physics.Raycast(ray, out hit);
+            if (isCollider)
+            {
+                GameObject go = Instantiate(buildPrefab, hit.point, Quaternion.identity);//创建障碍物
+                go.transform.SetParent(this.transform);
+                navMeshSurface.BuildNavMesh();//重新烘焙
+            }
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><h2 id="_10音效系统"><a href="#_10音效系统" class="header-anchor">#</a> 10音效系统</h2> <p><strong>常用组件</strong></p> <ul><li>AudioClip 音频剪辑：设置要播放的音频</li> <li>Mute 静音</li> <li>Bypass Effects 绕过效果：可以快速“绕过”应用于音频远的滤波效果</li> <li>Play On Awake 唤醒时播放</li> <li>Loop 循环</li> <li>Priority 优先级：确定场景中所有并存的音频源的优先权，range(0,256)，0代表最高优先权</li> <li>Volume 音量</li> <li>Pitch 音调：影响音频的播放速度</li> <li>Spatial Blend 空间混合：设置3D引擎对音频源的影响程度</li> <li>3D Sound Settings 3D声音设置：Min Distance最小距离，超过该距离声音就会减小；Max Distance最大距离，声音衰减的最大距离</li></ul> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioTest : MonoBehaviour
+{
+    AudioSource audioSource;
+    void Start()
+    {
+        audioSource = GetComponent&lt;AudioSource&gt;();//得到音频源
+        audioSource.clip = Resources.Load&lt;AudioClip&gt;(&quot;bj4&quot;);//设置播放音频
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(&quot;a&quot;))
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();//播放
+            }
+            else
+            {
+                Debug.Log(&quot;音频已经在播放中了&quot;);
+            }
+        }
+        if (Input.GetKeyDown(&quot;b&quot;))
+        {
+            audioSource.Pause();//暂停
+        }
+        if (Input.GetKeyDown(&quot;c&quot;))
+        {
+            audioSource.Stop();//停止
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p><strong>音频过滤器</strong></p> <p>用于对声音进行过滤的组件</p> <ul><li>Audio Low Pass Filter 音频低通过滤器：抑制高频音，通行低频音（如雷声滚滚）</li> <li>Audio High Pass Filter 音频高通过滤器：抑制低频音，通行高频音（如尖锐刺耳的声音片段）</li> <li>Audio Chorus Filter 音频合音过滤器：合成由多个音频相同但略有不同的声音（如大合唱效果）</li> <li>Audio Distortion Filter 音频失真过滤器：对音频的失真处理（如模拟破收音机、对讲机的声音）</li> <li>Audio Echo Filter 音频回声过滤器：延迟重复一个声音（如模拟在峡谷中、雷声）</li> <li>Audio Reverb Filter 音频混响过滤器：对音频剪辑并失真，创建个性化的混响效果</li></ul> <p><strong>音频混响区Audio Reverb Zone</strong></p> <p>获取音频剪辑并根据音频侦听器所在的混响区进行失真处理，用来模拟声音在不同区域的衰减及衍射效果</p> <ul><li>MinDistance 最小距离</li> <li>MaxDistance 最大距离</li></ul> <p><strong>音频管理器</strong></p> <p>Edit/Project Settings/Audio</p> <p>设置一些全局的声音效果，如全局的声音大小，衰减因子等</p> <ul><li>Global Volume 全局音量</li> <li>Volume Rolloff Scale音量衰减因子</li> <li>DSP Buffer Size DSP缓冲大小：调节缓冲区大小可以优化性能</li></ul> <h2 id="_11特效系统"><a href="#_11特效系统" class="header-anchor">#</a> 11特效系统</h2> <h3 id="_11-1粒子系统"><a href="#_11-1粒子系统" class="header-anchor">#</a> 11.1粒子系统</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ParticleTest : MonoBehaviour
+{
+    GameObject gameObject;
+    ParticleSystem particleSystem;
+    void Start()
+    {
+        gameObject = Instantiate(Resources.Load&lt;GameObject&gt;(&quot;22_RFX_Fire_Campfire1&quot;),this.transform);
+        gameObject.transform.position = transform.position;
+        particleSystem = gameObject.GetComponent&lt;ParticleSystem&gt;();
+        ParticleSystem.MainModule mainModule = particleSystem.main;
+        mainModule.loop = true;
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(&quot;a&quot;))
+        {
+            particleSystem.Play();
+        }
+        if (Input.GetKeyDown(&quot;b&quot;))
+        {
+            particleSystem.Pause();
+        }
+        if (Input.GetKeyDown(&quot;c&quot;))
+        {
+            particleSystem.Stop();
+        }
+        if (Input.GetKeyDown(&quot;d&quot;))
+        {
+            Destroy(gameObject);
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>若要使用OnParticleCollision(GameObject other)API，需要如下设置</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>private void OnParticleCollision(GameObject other)
+{
+    Debug.Log(&quot;粒子发生了碰撞，碰撞到的物体名称为：&quot; + other.name);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="/UnityBasicKnowledge.assets/image-20220211194043816.png" alt="image-20220211194043816"></p> <p><strong>粒子系统触发回调</strong></p> <p><img src="/UnityBasicKnowledge.assets/image-20220211201152153.png" alt="image-20220211201152153"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ParticleTest : MonoBehaviour
+{
+    ParticleSystem particle;
+    void Start()
+    {
+        particle = transform.GetComponent&lt;ParticleSystem&gt;();
+    }
+
+    private void OnParticleTrigger()
+    {
+        
+        //用来缓存这一帧触发的粒子
+        List&lt;ParticleSystem.Particle&gt; particles = new List&lt;ParticleSystem.Particle&gt;();
+        //获取每一帧发生触发的粒子
+        int numEnter = particle.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, particles);
+        if(numEnter!=0)
+            print(numEnter);
+        for(int i = 0; i &lt; numEnter; ++i)
+        {
+            ParticleSystem.Particle pt = particles[i];
+            pt.startColor = Color.red;
+            particles[i] = pt;
+        }
+        //写回
+        particle.SetTriggerParticles(ParticleSystemTriggerEventType.Enter, particles);
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h3 id="_11-2拖尾系统"><a href="#_11-2拖尾系统" class="header-anchor">#</a> 11.2拖尾系统</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TrailTest : MonoBehaviour
+{
+    GameObject trail;
+    void Start()
+    {
+        //克隆
+        trail = GameObject.Instantiate(Resources.Load&lt;GameObject&gt;(&quot;Accelerate&quot;));
+        trail.transform.SetParent(this.transform);
+        //调整局部坐标位置
+        trail.transform.localPosition = new Vector3(0, 0.5f, 0);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(&quot;a&quot;))
+        {
+            trail.GetComponent&lt;TrailRenderer&gt;().emitting = true;//开启拖尾
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="_12视频播放管理"><a href="#_12视频播放管理" class="header-anchor">#</a> 12视频播放管理</h2> <p>Video Player组件</p> <h2 id="_13dotween补件动画插件"><a href="#_13dotween补件动画插件" class="header-anchor">#</a> 13DoTween补件动画插件</h2> <h3 id="_13-1空间物体位置旋转大小动画"><a href="#_13-1空间物体位置旋转大小动画" class="header-anchor">#</a> 13.1空间物体位置旋转大小动画</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    void Start()
+    {
+        //世界坐标系位置位移
+        transform.DOMove(new Vector3(-33, 244, 400), 2f);
+        transform.DOMoveX(-33, 2f);
+        transform.DOMoveY(244, 2f);
+        transform.DOMoveZ(400, 2f);
+
+        //本地坐标系位置位移
+        transform.DOLocalMove(new Vector3(20, 20, 20), 2f);
+        transform.DOLocalMoveX(20, 2f);
+        transform.DOLocalMoveY(20, 2f);
+        transform.DOLocalMoveZ(20, 2f);
+
+        //世界坐标系角度旋转
+        transform.DORotate(new Vector3(0, 20, 0), 2f);
+
+        //本地坐标系角度旋转
+        transform.DOLocalRotate(new Vector3(0, 20, 0), 2f);
+
+        //物体大小的缩放
+        transform.DOScale(new Vector3(2, 2, 2), 2f);
+        transform.DOScaleX(2, 2f);
+        transform.DOScaleY(2, 2f);
+        transform.DOScaleZ(2, 2f);
+
+        //世界坐标系位置跳跃
+        transform.DOJump(new Vector3(-30, 250, 410), 1, 5, 5f);//(位置,力度,步数,时间)
+
+        //本地坐标系位置跳跃
+        transform.DOLocalJump(new Vector3(-30, 250, 410), 1, 5, 5f);//(位置,力度,步数,时间)
+
+        //物体弹簧位置冲击
+        transform.DOPunchPosition(new Vector3(10, 0, 0), 3f, 10, 1);//(位置,时间,振幅,弹性)
+
+        //物体弹簧角度冲击
+        transform.DOPunchRotation(new Vector3(10, 0, 0), 3f, 10, 1);//(位置,时间,振幅,弹性)
+
+        //物体弹簧位置冲击
+        transform.DOPunchScale(new Vector3(10, 0, 0), 3f, 10, 1);//(位置,时间,振幅,弹性)
+
+        //旋转目标,使其朝向某个指定的位置方向
+        transform.DOLookAt(new Vector3(1, 1, 1), 2f);//(位置,时间)
+
+        //位置增量
+        transform.DOBlendableMoveBy(new Vector3(20, 0, 0), 2f);
+
+        //旋转增量
+        transform.DOBlendableRotateBy(new Vector3(20, 0, 0), 2f);
+
+        //缩放增量
+        transform.DOBlendableScaleBy(new Vector3(20, 0, 0), 2f);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div><h3 id="_13-2颜色、透明度的控制"><a href="#_13-2颜色、透明度的控制" class="header-anchor">#</a> 13.2颜色、透明度的控制</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    public Gradient gradient;
+    void Start()
+    {
+        //更改颜色
+        Material material = GetComponent&lt;MeshRenderer&gt;().material;
+        material.DOColor(Color.green, 2f);
+
+        //更改透明度
+        material.DOFade(0, 2f);
+
+        //颜色渐变
+        material.DOGradientColor(gradient, 2f);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="_13-4震动效果表现"><a href="#_13-4震动效果表现" class="header-anchor">#</a> 13.4震动效果表现</h3> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    void Start()
+    {
+        //随机震动效果
+        //位置震动
+        transform.DOShakePosition(2f);
+        
+        //角度震动
+        transform.DOShakeRotation(2f);
+
+        //缩放震动
+        transform.DOShakeScale(2f);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="_13-5物体路径动画"><a href="#_13-5物体路径动画" class="header-anchor">#</a> 13.5物体路径动画</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220212155719338.png" alt="image-20220212155719338"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    void Start()
+    {
+        Vector3[] path = new Vector3[] { new Vector3(0, 0, 0), new Vector3(3, 32, 1), new Vector3(7, 59, 37) };
+        transform.DOPath(path, 5f, PathType.CatmullRom, PathMode.Full3D, 10, Color.red);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>或者添加DoTween Path组件</p> <h3 id="_13-6动画序列"><a href="#_13-6动画序列" class="header-anchor">#</a> 13.6动画序列</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220212160800800.png" alt="image-20220212160800800"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    void Start()
+    {
+        //队列动画
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(transform.DOBlendableMoveBy(new Vector3(0, 10, 0), 2f));
+        sequence.Insert(0f, transform.DOBlendableMoveBy(new Vector3(0, 0, 10), 2f));
+        sequence.AppendCallback(() =&gt;
+        {
+            Debug.Log(&quot;AppendCallback1&quot;);
+        });
+        sequence.AppendInterval(2f);//等待两秒
+        sequence.Append(transform.DOBlendableMoveBy(new Vector3(10, 0, 0), 2f));
+        sequence.AppendCallback(() =&gt;
+        {
+            Debug.Log(&quot;AppendCallback2&quot;);
+        });
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="_13-7动画常用设置及动画控制"><a href="#_13-7动画常用设置及动画控制" class="header-anchor">#</a> 13.7动画常用设置及动画控制</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220212204514231.png" alt="image-20220212204514231"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    Tweener tweener;
+    void Start()
+    {
+        //常用设置
+        tweener = transform.DOLocalMoveX(10, 2f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Restart);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="_13-8动画的回调"><a href="#_13-8动画的回调" class="header-anchor">#</a> 13.8动画的回调</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220212211937364.png" alt="image-20220212211937364"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DotweenTest : MonoBehaviour
+{
+    Tweener tweener;
+    void Start()
+    {
+        //常用设置
+        tweener = transform.DOLocalMoveX(10, 2f).SetEase(Ease.Linear);
+        tweener.OnComplete(()=&gt; 
+        {
+            Debug.Log(&quot;OnComplete&quot;);
+        });
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_14easytouch手势插件"><a href="#_14easytouch手势插件" class="header-anchor">#</a> 14EasyTouch手势插件</h2> <h3 id="_14-1基本用法"><a href="#_14-1基本用法" class="header-anchor">#</a> 14.1基本用法</h3> <p>需要添加EasyTouch物体</p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using HedgehogTeam.EasyTouch;
+using System;
+
+public class EasytouchTest : MonoBehaviour
+{
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        //使用Easytouch.current 记录玩家输入的手势
+        Gesture gesture = EasyTouch.current;
+        if (gesture != null)
+        {
+            if (EasyTouch.EvtType.On_TouchStart == gesture.type)//触摸开始时
+            {
+                OnTouchStart(gesture);
+            }
+            else if(EasyTouch.EvtType.On_Drag == gesture.type)//拖拽时
+            {
+                OnDrag(gesture);
+            }
+        }
+    }
+
+    private void OnDrag(Gesture gesture)
+    {
+        Debug.Log(gesture.type);
+    }
+
+    private void OnTouchStart(Gesture gesture)
+    {
+        Debug.Log(gesture.type);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><h3 id="_14-2使用可视化组件quickgesture检测常用手势及trigger"><a href="#_14-2使用可视化组件quickgesture检测常用手势及trigger" class="header-anchor">#</a> 14.2使用可视化组件QuickGesture检测常用手势及Trigger</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220213002925705.png" alt="image-20220213002925705"></p> <p>Trigger组件</p> <h3 id="_14-3easytouch组件核心参数"><a href="#_14-3easytouch组件核心参数" class="header-anchor">#</a> 14.3Easytouch组件核心参数</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220213004954823.png" alt="image-20220213004954823"></p> <h3 id="_14-4joystick虚拟摇杆"><a href="#_14-4joystick虚拟摇杆" class="header-anchor">#</a> 14.4Joystick虚拟摇杆</h3> <p>ETC Joystick组件</p> <p><img src="/UnityBasicKnowledge.assets/image-20220213005508461.png" alt="image-20220213005508461"></p> <div class="language-c# line-numbers-mode"><pre class="language-text"><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PacmanMove : MonoBehaviour {
+    //移动速度
+    public float moveSpeed;
+
+    private Rigidbody2D rb;
+    private SelfAnim animator;
+	// Use this for initialization
+	void Start () {
+        rb = GetComponent&lt;Rigidbody2D&gt;();
+        animator = GetComponent&lt;SelfAnim&gt;();
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        if (GameMgr.Instance.isStartGame)
+        {
+            if (Input.GetKey(KeyCode.D) || ETCInput.GetAxisPressedRight(&quot;Horizontal&quot;))
+            {
+                Vector2 dest = rb.position + Vector2.right * moveSpeed;
+                rb.MovePosition(dest);
+                animator.ChangeDir(SelfAnim.Anim_Dir.Right);
+            }
+            else if (Input.GetKey(KeyCode.A) || ETCInput.GetAxisPressedLeft(&quot;Horizontal&quot;))
+            {
+                Vector2 dest = rb.position + Vector2.left * moveSpeed;
+                rb.MovePosition(dest);
+                animator.ChangeDir(SelfAnim.Anim_Dir.Left);
+            }
+            else if (Input.GetKey(KeyCode.W) || ETCInput.GetAxisPressedUp(&quot;Vertical&quot;))
+            {
+                Vector2 dest = rb.position + Vector2.up * moveSpeed;
+                rb.MovePosition(dest);
+                animator.ChangeDir(SelfAnim.Anim_Dir.Up);
+            }
+            else if (Input.GetKey(KeyCode.S) || ETCInput.GetAxisPressedDown(&quot;Vertical&quot;))
+            {
+                Vector2 dest = rb.position + Vector2.down * moveSpeed;
+                rb.MovePosition(dest);
+                animator.ChangeDir(SelfAnim.Anim_Dir.Down);
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="_15平台打包操作"><a href="#_15平台打包操作" class="header-anchor">#</a> 15平台打包操作</h2> <h3 id="_15-1windows平台"><a href="#_15-1windows平台" class="header-anchor">#</a> 15.1Windows平台</h3> <p><img src="/UnityBasicKnowledge.assets/image-20220213013031091.png" alt="image-20220213013031091"></p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/Unity/" class="prev router-link-active">
+            Unity专区
+          </a></span> <!----></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-92abcef6><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_1切换场景" class="sidebar-link reco-side-_1切换场景" data-v-92abcef6>1切换场景</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_1-1同步加载场景" class="sidebar-link reco-side-_1-1同步加载场景" data-v-92abcef6>1.1同步加载场景</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_1-2异步加载场景" class="sidebar-link reco-side-_1-2异步加载场景" data-v-92abcef6>1.2异步加载场景</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_1-3加载场景时保留物体" class="sidebar-link reco-side-_1-3加载场景时保留物体" data-v-92abcef6>1.3加载场景时保留物体</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_2游戏物体" class="sidebar-link reco-side-_2游戏物体" data-v-92abcef6>2游戏物体</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_2-1加载resource内的物体" class="sidebar-link reco-side-_2-1加载resource内的物体" data-v-92abcef6>2.1加载Resource内的物体</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_2-2通过脚本控制物体" class="sidebar-link reco-side-_2-2通过脚本控制物体" data-v-92abcef6>2.2通过脚本控制物体</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_3组件管理" class="sidebar-link reco-side-_3组件管理" data-v-92abcef6>3组件管理</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_3-1添加组件" class="sidebar-link reco-side-_3-1添加组件" data-v-92abcef6>3.1添加组件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_3-2查找组件" class="sidebar-link reco-side-_3-2查找组件" data-v-92abcef6>3.2查找组件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_3-3激活-关闭组件" class="sidebar-link reco-side-_3-3激活-关闭组件" data-v-92abcef6>3.3激活/关闭组件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_3-4删除组件" class="sidebar-link reco-side-_3-4删除组件" data-v-92abcef6>3.4删除组件</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4ugui图形交互系统" class="sidebar-link reco-side-_4ugui图形交互系统" data-v-92abcef6>4UGUI图形交互系统</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-1输入框-inputfield" class="sidebar-link reco-side-_4-1输入框-inputfield" data-v-92abcef6>4.1输入框 InputField</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-2按钮-button" class="sidebar-link reco-side-_4-2按钮-button" data-v-92abcef6>4.2按钮 Button</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-3图片-image" class="sidebar-link reco-side-_4-3图片-image" data-v-92abcef6>4.3图片 Image</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-4文本-text" class="sidebar-link reco-side-_4-4文本-text" data-v-92abcef6>4.4文本 Text</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-5开关-toggle" class="sidebar-link reco-side-_4-5开关-toggle" data-v-92abcef6>4.5开关 Toggle</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-6滑动条-slider" class="sidebar-link reco-side-_4-6滑动条-slider" data-v-92abcef6>4.6滑动条 Slider</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_4-7滚动窗口" class="sidebar-link reco-side-_4-7滚动窗口" data-v-92abcef6>4.7滚动窗口</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_5用户输入管理" class="sidebar-link reco-side-_5用户输入管理" data-v-92abcef6>5用户输入管理</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_5-1虚拟轴" class="sidebar-link reco-side-_5-1虚拟轴" data-v-92abcef6>5.1虚拟轴</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_5-2获取键盘事件" class="sidebar-link reco-side-_5-2获取键盘事件" data-v-92abcef6>5.2获取键盘事件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_5-3获取鼠标事件" class="sidebar-link reco-side-_5-3获取鼠标事件" data-v-92abcef6>5.3获取鼠标事件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_5-4移动设备输入" class="sidebar-link reco-side-_5-4移动设备输入" data-v-92abcef6>5.4移动设备输入</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-3d物理系统" class="sidebar-link reco-side-_6-3d物理系统" data-v-92abcef6>6 3D物理系统</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-1刚体rigidbody" class="sidebar-link reco-side-_6-1刚体rigidbody" data-v-92abcef6>6.1刚体Rigidbody</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-2恒力constant-force" class="sidebar-link reco-side-_6-2恒力constant-force" data-v-92abcef6>6.2恒力Constant Force</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-3碰撞器collider和触发器trigger" class="sidebar-link reco-side-_6-3碰撞器collider和触发器trigger" data-v-92abcef6>6.3碰撞器Collider和触发器Trigger</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-4力的常用函数" class="sidebar-link reco-side-_6-4力的常用函数" data-v-92abcef6>6.4力的常用函数</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-5物理材质" class="sidebar-link reco-side-_6-5物理材质" data-v-92abcef6>6.5物理材质</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-6关节组件" class="sidebar-link reco-side-_6-6关节组件" data-v-92abcef6>6.6关节组件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_6-7射线" class="sidebar-link reco-side-_6-7射线" data-v-92abcef6>6.7射线</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_7-2d物理系统" class="sidebar-link reco-side-_7-2d物理系统" data-v-92abcef6>7 2D物理系统</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_7-1-2d刚体-rigidbody-2d" class="sidebar-link reco-side-_7-1-2d刚体-rigidbody-2d" data-v-92abcef6>7.1 2D刚体 Rigidbody 2D</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_8动画系统" class="sidebar-link reco-side-_8动画系统" data-v-92abcef6>8动画系统</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_9寻路系统" class="sidebar-link reco-side-_9寻路系统" data-v-92abcef6>9寻路系统</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_10音效系统" class="sidebar-link reco-side-_10音效系统" data-v-92abcef6>10音效系统</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_11特效系统" class="sidebar-link reco-side-_11特效系统" data-v-92abcef6>11特效系统</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_11-1粒子系统" class="sidebar-link reco-side-_11-1粒子系统" data-v-92abcef6>11.1粒子系统</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_11-2拖尾系统" class="sidebar-link reco-side-_11-2拖尾系统" data-v-92abcef6>11.2拖尾系统</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_12视频播放管理" class="sidebar-link reco-side-_12视频播放管理" data-v-92abcef6>12视频播放管理</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13dotween补件动画插件" class="sidebar-link reco-side-_13dotween补件动画插件" data-v-92abcef6>13DoTween补件动画插件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-1空间物体位置旋转大小动画" class="sidebar-link reco-side-_13-1空间物体位置旋转大小动画" data-v-92abcef6>13.1空间物体位置旋转大小动画</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-2颜色、透明度的控制" class="sidebar-link reco-side-_13-2颜色、透明度的控制" data-v-92abcef6>13.2颜色、透明度的控制</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-4震动效果表现" class="sidebar-link reco-side-_13-4震动效果表现" data-v-92abcef6>13.4震动效果表现</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-5物体路径动画" class="sidebar-link reco-side-_13-5物体路径动画" data-v-92abcef6>13.5物体路径动画</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-6动画序列" class="sidebar-link reco-side-_13-6动画序列" data-v-92abcef6>13.6动画序列</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-7动画常用设置及动画控制" class="sidebar-link reco-side-_13-7动画常用设置及动画控制" data-v-92abcef6>13.7动画常用设置及动画控制</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_13-8动画的回调" class="sidebar-link reco-side-_13-8动画的回调" data-v-92abcef6>13.8动画的回调</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_14easytouch手势插件" class="sidebar-link reco-side-_14easytouch手势插件" data-v-92abcef6>14EasyTouch手势插件</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_14-1基本用法" class="sidebar-link reco-side-_14-1基本用法" data-v-92abcef6>14.1基本用法</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_14-2使用可视化组件quickgesture检测常用手势及trigger" class="sidebar-link reco-side-_14-2使用可视化组件quickgesture检测常用手势及trigger" data-v-92abcef6>14.2使用可视化组件QuickGesture检测常用手势及Trigger</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_14-3easytouch组件核心参数" class="sidebar-link reco-side-_14-3easytouch组件核心参数" data-v-92abcef6>14.3Easytouch组件核心参数</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_14-4joystick虚拟摇杆" class="sidebar-link reco-side-_14-4joystick虚拟摇杆" data-v-92abcef6>14.4Joystick虚拟摇杆</a></li><li class="level-2" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_15平台打包操作" class="sidebar-link reco-side-_15平台打包操作" data-v-92abcef6>15平台打包操作</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Unity/UnityBasicKnowledge/UnityBasicKnowledge.html#_15-1windows平台" class="sidebar-link reco-side-_15-1windows平台" data-v-92abcef6>15.1Windows平台</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a008c6ba data-v-a008c6ba><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a008c6ba><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a008c6ba></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a008c6ba></path></svg></div><div class="reco-bgm-panel" data-v-2940e5b8><audio id="bgm" src="/audio/RunAground.mp3" data-v-2940e5b8></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><img src="/img/music/RunAground.png" data-v-2940e5b8></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="reco-bgm-cover" style="background-image:url(/img/music/RunAground.png);" data-v-2940e5b8><div class="mini-operation" style="display:none;" data-v-2940e5b8><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-2940e5b8></i></div> <div class="falut-message" style="display:none;" data-v-2940e5b8>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-music music" data-v-2940e5b8></i>搁浅</div> <div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-artist" data-v-2940e5b8></i>周杰伦 / 七里香</div> <div class="reco-bgm-progress" data-v-2940e5b8><div class="progress-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div> <div class="reco-bgm-operation" data-v-2940e5b8><i class="reco-bgm reco-bgm-last last" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play play" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-next next" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-2940e5b8></i> <div class="volume-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div></div> <div class="reco-bgm-left-box" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><i class="reco-bgm reco-bgm-left" data-v-2940e5b8></i></div></div></div><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.de078ce9.js" defer></script><script src="/assets/js/3.442212e7.js" defer></script><script src="/assets/js/1.960485ad.js" defer></script><script src="/assets/js/21.54fc12f3.js" defer></script>
+  </body>
+</html>
