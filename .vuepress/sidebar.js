@@ -2,6 +2,7 @@ module.exports = {
     "/docs/Java/": [
         "",
         '/docs/Java/JavaBasisQuestions/JavaBasisQuestions',
+        '/docs/Java/JavaMultithreading/JavaMultithreading',
     ],
     "/docs/MySQL/": [
         "",
@@ -10,6 +11,7 @@ module.exports = {
     "/docs/SSM/": [
         "",
         '/docs/SSM/SSMProject/SSMProject',
+        '/docs/SSM/SSMLearningNotes/SSMLearningNotes',
     ],
     "/docs/Git/": [
         "",
