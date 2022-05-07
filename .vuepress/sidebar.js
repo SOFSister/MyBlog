@@ -12,6 +12,7 @@ module.exports = {
         "",
         '/docs/SSM/SSMProject/SSMProject',
         '/docs/SSM/SSMLearningNotes/SSMLearningNotes',
+        '/docs/SSM/JWT/JWT',
     ],
     "/docs/Git/": [
         "",
