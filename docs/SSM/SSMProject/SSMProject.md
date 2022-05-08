@@ -102,13 +102,20 @@ tags:
        </dependency>
        ~~~
 
-     
+     - Lombok
+       
+        ```xml
+        <dependency>
+        	<groupId>org.projectlombok</groupId>
+        	<artifactId>lombok</artifactId>
+        </dependency>
+        ```
 
 ## 项目结构
 
 1. 添加包
 
-   ![image-20220301134012560](/SSMProject.assets/image-20220301134012560.png)
+   ![image-20220301134012560](/SSMProject.assets/image-20220301134012560.jpg)
 
 2. 添加实体类
 
@@ -482,7 +489,7 @@ public class CacheService {
 
 
 
- ## 推荐用法
+ ## 有可能用到的用法
 
 ### -API权限路径规划
 
@@ -621,6 +628,29 @@ public class JsonData {
    ![image-20220302171333006](/SSMProject.assets/image-20220302171333006.png)
 
    
+
+### -全局异常捕捉
+
+~~~java
+@ControllerAdvice
+public class CustomExceptionHandler {
+
+    private final static Logger logger = LoggerFactory.getLogger(CustomExceptionHandler.class);
+
+    @ExceptionHandler(value = Exception.class)
+    @ResponseBody
+    public JsonData handle(Exception e){
+
+        logger.error("[ 系统异常 ]{}",e);
+
+        return JsonData.buildError("全局异常，未知错误");
+
+    }
+
+}
+~~~
+
+
 
 ### -注册MD5密码加密工具类
 
@@ -1212,24 +1242,6 @@ public class CommonUtils {
    ~~~
 
    
-
-### -Mybatis generator逆向工程插件使用
-
-1. 添加依赖
-
-   ~~~xml
-   <build>
-   		<plugins>
-   			<plugin>
-   				<groupId>org.mybatis.generator</groupId>
-                   <artifactId>mybatis-generator-maven-plugin</artifactId>
-                   <version>1.3.7</version>
-   			</plugin>
-   		</plugins>
-   </build>
-   ~~~
-
-
 
 
 ## 打包项目
