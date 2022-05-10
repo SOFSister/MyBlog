@@ -1,6 +1,6 @@
 ---
 title: Java多线程
-date: '2022-05-06 17:50:00'
+date: '2022-05-06'
 sidebar: 'auto'
 categories:
  - Java
@@ -168,7 +168,7 @@ tags:
 
 ## 线程的生命周期
 
-![image-20220316095718725](/JavaMultithreading.assets/image-20220316095718725.png)
+![image-20220316095718725](./JavaMultithreading.assets/image-20220316095718725.png)
 
 
 

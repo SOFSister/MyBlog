@@ -11,6 +11,7 @@ module.exports = {
     "/docs/SSM/": [
         "",
         '/docs/SSM/SSMProject/SSMProject',
+        '/docs/SSM/SSMUtils/SSMUtils',
         '/docs/SSM/SSMLearningNotes/SSMLearningNotes',
         '/docs/SSM/JWT/JWT',
     ],

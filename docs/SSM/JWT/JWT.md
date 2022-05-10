@@ -1,6 +1,6 @@
 ---
 title: JWT原理以及SpringBoot使用
-date: '2022-05-07 16:36:00'
+date: '2022-05-07'
 sidebar: 'auto'
 categories:
  - SSM
@@ -21,7 +21,7 @@ tags:
 
 ### 2.1一般的用户认证流程
 
-![image-20220507095032017](/JWT.assets/image-20220507095032017.png)
+![image-20220507095032017](./JWT.assets/image-20220507095032017.png)
 
 ### 2.2存在的问题
 
@@ -29,13 +29,13 @@ tags:
 
 ## 3. JWT 认证流程
 
-![image-20220507101759736](/JWT.assets/image-20220507101759736.png)
+![image-20220507101759736](./JWT.assets/image-20220507101759736.png)
 
 ## 4. JWT 原理
 
 ### 4.1 token的组成
 
-![image-20220507140323573](/JWT.assets/image-20220507140323573.png)
+![image-20220507140323573](./JWT.assets/image-20220507140323573.png)
 
 ### 4.2 JWT如何保证数据不被篡改
 

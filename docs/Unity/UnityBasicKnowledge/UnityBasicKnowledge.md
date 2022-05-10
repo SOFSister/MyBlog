@@ -1,6 +1,6 @@
 ---
 title: Unity基础知识
-date: '2022-05-05 12:25:00'
+date: '2022-05-05'
 sidebar: 'auto'
 categories:
  - Unity
@@ -282,7 +282,7 @@ void OnValueChanged(float value)//必须要有float形参
 
 **通过两个Image实现滑动条效果**
 
-![image-20220207210732582](/UnityBasicKnowledge.assets/image-20220207210732582.png)
+![image-20220207210732582](./UnityBasicKnowledge.assets/image-20220207210732582.png)
 
 ~~~c#
 Image image = ...;
@@ -492,7 +492,7 @@ rig.WakeUp();//唤醒休眠中的刚体
 
 **常用api**
 
-![image-20220214192632921](/UnityBasicKnowledge.assets/image-20220214192632921.png)
+![image-20220214192632921](./UnityBasicKnowledge.assets/image-20220214192632921.png)
 
 ~~~ c#
 Rigidbody rig = transform.GetComponent<Rigidbody>();
@@ -956,11 +956,11 @@ private void OnParticleCollision(GameObject other)
 
 
 
-![image-20220211194043816](/UnityBasicKnowledge.assets/image-20220211194043816.png)
+![image-20220211194043816](./UnityBasicKnowledge.assets/image-20220211194043816.png)
 
 **粒子系统触发回调**
 
-![image-20220211201152153](/UnityBasicKnowledge.assets/image-20220211201152153.png)
+![image-20220211201152153](./UnityBasicKnowledge.assets/image-20220211201152153.png)
 
 ~~~c#
 using System.Collections;
@@ -1151,7 +1151,7 @@ public class DotweenTest : MonoBehaviour
 
 ### 13.5物体路径动画
 
-![image-20220212155719338](/UnityBasicKnowledge.assets/image-20220212155719338.png)
+![image-20220212155719338](./UnityBasicKnowledge.assets/image-20220212155719338.png)
 
 ~~~c#
 using System.Collections;
@@ -1173,7 +1173,7 @@ public class DotweenTest : MonoBehaviour
 
 ### 13.6动画序列
 
-![image-20220212160800800](/UnityBasicKnowledge.assets/image-20220212160800800.png)
+![image-20220212160800800](./UnityBasicKnowledge.assets/image-20220212160800800.png)
 
 ~~~c#
 using System.Collections;
@@ -1205,7 +1205,7 @@ public class DotweenTest : MonoBehaviour
 
 ### 13.7动画常用设置及动画控制
 
-![image-20220212204514231](/UnityBasicKnowledge.assets/image-20220212204514231.png)
+![image-20220212204514231](./UnityBasicKnowledge.assets/image-20220212204514231.png)
 
 ~~~c#
 using System.Collections;
@@ -1226,7 +1226,7 @@ public class DotweenTest : MonoBehaviour
 
 ### 13.8动画的回调
 
-![image-20220212211937364](/UnityBasicKnowledge.assets/image-20220212211937364.png)
+![image-20220212211937364](./UnityBasicKnowledge.assets/image-20220212211937364.png)
 
 ~~~c#
 using System.Collections;
@@ -1300,19 +1300,19 @@ public class EasytouchTest : MonoBehaviour
 
 ### 14.2使用可视化组件QuickGesture检测常用手势及Trigger
 
-![image-20220213002925705](/UnityBasicKnowledge.assets/image-20220213002925705.png)
+![image-20220213002925705](./UnityBasicKnowledge.assets/image-20220213002925705.png)
 
 Trigger组件
 
 ### 14.3Easytouch组件核心参数
 
-![image-20220213004954823](/UnityBasicKnowledge.assets/image-20220213004954823.png)
+![image-20220213004954823](./UnityBasicKnowledge.assets/image-20220213004954823.png)
 
 ### 14.4Joystick虚拟摇杆
 
 ETC Joystick组件
 
-![image-20220213005508461](/UnityBasicKnowledge.assets/image-20220213005508461.png)
+![image-20220213005508461](./UnityBasicKnowledge.assets/image-20220213005508461.png)
 
 ~~~c#
 using System.Collections;
@@ -1368,4 +1368,4 @@ public class PacmanMove : MonoBehaviour {
 
 ### 15.1Windows平台
 
-![image-20220213013031091](/UnityBasicKnowledge.assets/image-20220213013031091.png)
+![image-20220213013031091](./UnityBasicKnowledge.assets/image-20220213013031091.png)

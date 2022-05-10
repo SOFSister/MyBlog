@@ -1,6 +1,6 @@
 ---
 title: MySQL基础知识
-date: '2022-05-06 00:14:00'
+date: '2022-05-06'
 sidebar: 'auto'
 categories:
  - MySQL

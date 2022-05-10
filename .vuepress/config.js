@@ -6,7 +6,7 @@ module.exports = {
     }
   },
   "title": "feedsheep", //这里是博客标题
-  "description": "feedsheep's boring life", //博客描述
+  "description": "现在不好好学习以后怎么去异世界当勇者", //博客描述
   //"dest": "public", //博客部署时输出的文件夹
   "head": [
     [
@@ -101,7 +101,7 @@ module.exports = {
     // 作者头像
     "authorAvatar": "/avatar.jpg",
     // 备案号
-    "record": "xxxx",
+    "record": "浙ICP备2022013822号",
     // 项目开始时间
     "startYear": "2022",
     /**
@@ -135,25 +135,25 @@ module.exports = {
             name: '搁浅',
             artist: '周杰伦 / 七里香',
             url: '/audio/RunAground.mp3',
-            cover: '/img/music/RunAground.png'
+            cover: '/img/music/RunAground.jpg'
           },
           {
             name: '花海',
             artist: '周杰伦 / 魔杰座',
             url: '/audio/SeaOfFlowers.mp3',
-            cover: '/img/music/SeaOfFlowers.png'
+            cover: '/img/music/SeaOfFlowers.jpg'
           },
           {
             name: '半岛铁盒',
             artist: '周杰伦 / 八度空间',
             url: '/audio/PeninsulaIronBox.mp3',
-            cover: '/img/music/PeninsulaIronBox.png'
+            cover: '/img/music/PeninsulaIronBox.jpg'
           },
           {
             name: '蒲公英的约定',
             artist: '周杰伦 / 我很忙',
             url: '/audio/DandelionAgreement.mp3',
-            cover: '/img/music/DandelionAgreement.png'
+            cover: '/img/music/DandelionAgreement.jpg'
           }
         ]
       }

@@ -1,6 +1,6 @@
 ---
 title: Git笔记
-date: '2022-05-05 00:09:00'
+date: '2022-05-05'
 categories:
  - Git
 tags:
@@ -39,7 +39,7 @@ sidebar: 'auto'
 
 ## **Git工作机制**
 
-![image-20220225235755596](/GitGrammar.assets/image-20220225235755596.png)
+![image-20220225235755596](./GitGrammar.assets/image-20220225235755596.png)
 
 ## Git安装
 
@@ -252,7 +252,7 @@ sidebar: 'auto'
 
     - 在远程仓库中添加
 
-      ![image-20220505000555620](/GitGrammar.assets/image-20220505000555620.png)
+      ![image-20220505000555620](./GitGrammar.assets/image-20220505000555620.png)
 
     - 克隆仓库到本地
 

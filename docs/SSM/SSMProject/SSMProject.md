@@ -1,6 +1,6 @@
 ---
 title: SSM项目终极保姆级别创建过程
-date: '2022-05-04 01:16:00'
+date: '2022-05-04'
 sidebar: 'auto'
 categories:
  - SSM
@@ -12,7 +12,7 @@ tags:
 ## 打开Spring官网在线创建地址
 
 1. 打开地址：https://start.spring.io/
-2. ![image-20220301114912239](/SSMProject.assets/image-20220301114912239.png)
+2. ![image-20220301114912239](./SSMProject.assets/image-20220301114912239.png)
 3. 会下载一个压缩包，解压到项目的位置，并用IDEA打开
 
 
@@ -25,7 +25,7 @@ tags:
 
    - 如果刚刚创建时选择了依赖，文件内已经存在相关依赖，但是需要删掉一行。
 
-     ![image-20220301120726730](/SSMProject.assets/image-20220301120726730.png)
+     ![image-20220301120726730](./SSMProject.assets/image-20220301120726730.png)
 
    - 如果创建时没有选择依赖，则需要手动加入依赖
 
@@ -115,17 +115,17 @@ tags:
 
 1. 添加包
 
-   ![image-20220301134012560](/SSMProject.assets/image-20220301134012560.jpg)
+   ![image-20220301134012560](./SSMProject.assets/image-20220301134012560.jpg)
 
 2. 添加实体类
 
-   ![image-20220301142837290](/SSMProject.assets/image-20220301142837290.png)
+   ![image-20220301142837290](./SSMProject.assets/image-20220301142837290.png)
 
 ## 连通数据库
 
 1. 添加数据库配置
 
-   ![image-20220301150103263](/SSMProject.assets/image-20220301150103263.png)
+   ![image-20220301150103263](./SSMProject.assets/image-20220301150103263.png)
 
    ~~~properties
    server.port=8081
@@ -151,7 +151,7 @@ tags:
 
 2. 配置扫描mapper路径
 
-   ![image-20220301153106352](/SSMProject.assets/image-20220301153106352.png)
+   ![image-20220301153106352](./SSMProject.assets/image-20220301153106352.png)
 
    ~~~java
    @SpringBootApplication
@@ -167,7 +167,7 @@ tags:
 
 3. mapper包添加接口类，resources下的mapper文件夹内新建xml配置文件
 
-   ![image-20220301154107775](/SSMProject.assets/image-20220301154107775.png)
+   ![image-20220301154107775](./SSMProject.assets/image-20220301154107775.png)
 
    接口类
 
@@ -201,7 +201,7 @@ tags:
 
 4. service包内添加接口类，service包内添加impl包，impl包内继承实现接口类
 
-   ![image-20220301154259008](/SSMProject.assets/image-20220301154259008.png)
+   ![image-20220301154259008](./SSMProject.assets/image-20220301154259008.png)
 
    接口类
 
@@ -233,7 +233,7 @@ tags:
 
 5. controller包内添加controller类
 
-   ![image-20220301170210311](/SSMProject.assets/image-20220301170210311.png)
+   ![image-20220301170210311](./SSMProject.assets/image-20220301170210311.png)
 
    controller类
 
@@ -256,7 +256,7 @@ tags:
 
 6. 连通测试（测试controller的接口是否正确）
 
-   ![image-20220301170542597](/SSMProject.assets/image-20220301170542597.png)
+   ![image-20220301170542597](./SSMProject.assets/image-20220301170542597.png)
 
  
 
@@ -623,9 +623,9 @@ public class JsonData {
 
 2. settings配置
 
-   ![image-20220302171243975](/SSMProject.assets/image-20220302171243975.png)
+   ![image-20220302171243975](./SSMProject.assets/image-20220302171243975.png)
 
-   ![image-20220302171333006](/SSMProject.assets/image-20220302171333006.png)
+   ![image-20220302171333006](./SSMProject.assets/image-20220302171333006.png)
 
    
 
@@ -829,7 +829,7 @@ public class CommonUtils {
 
 ### -编写登录拦截器
 
-![image-20220308120534686](/SSMProject.assets/image-20220308120534686.png)
+![image-20220308120534686](./SSMProject.assets/image-20220308120534686.png)
 
 1. 创建拦截器LoginInterceptor
 
@@ -1035,7 +1035,7 @@ public class CommonUtils {
 
 3. 添加配置类
 
-   ![image-20220309104420463](/SSMProject.assets/image-20220309104420463.png)
+   ![image-20220309104420463](./SSMProject.assets/image-20220309104420463.png)
    
 3. 使用
 
@@ -1145,31 +1145,31 @@ public class CommonUtils {
 
 1. 打开E:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin，运行jmeter.bat
 
-2. 添加线程组![image-20220309113418580](/SSMProject.assets/image-20220309113418580.png)
+2. 添加线程组![image-20220309113418580](./SSMProject.assets/image-20220309113418580.png)
 
 3. 添加http请求
 
-   ![image-20220309113508761](/SSMProject.assets/image-20220309113508761.png)
+   ![image-20220309113508761](./SSMProject.assets/image-20220309113508761.png)
 
 4. 添加结果树
 
-   ![image-20220309113601943](/SSMProject.assets/image-20220309113601943.png)
+   ![image-20220309113601943](./SSMProject.assets/image-20220309113601943.png)
 
 5. 添加聚合报告
 
-   ![image-20220309113630168](/SSMProject.assets/image-20220309113630168.png)
+   ![image-20220309113630168](./SSMProject.assets/image-20220309113630168.png)
 
 6. 线程组内进行设置
 
-   ![image-20220309113720753](/SSMProject.assets/image-20220309113720753.png)
+   ![image-20220309113720753](./SSMProject.assets/image-20220309113720753.png)
 
 7. http内进行设置
 
-   ![image-20220309113822619](/SSMProject.assets/image-20220309113822619.png)
+   ![image-20220309113822619](./SSMProject.assets/image-20220309113822619.png)
 
 8. 保存并启动查看聚合报告
 
-   ![image-20220309113930010](/SSMProject.assets/image-20220309113930010.png)
+   ![image-20220309113930010](./SSMProject.assets/image-20220309113930010.png)
 
 ### -开启跨域配置
 
@@ -1301,14 +1301,14 @@ cnpm run build
 
    找到dist全路径名
 
-   ![image-20220502151320576](/SSMProject.assets/image-20220502151320576.png)
+   ![image-20220502151320576](./SSMProject.assets/image-20220502151320576.png)
 
    ~~~
    cd /usr/local/software/front_end/dist/
    pwd
    ~~~
 
-   ![image-20220502151410576](/SSMProject.assets/image-20220502151410576.png)
+   ![image-20220502151410576](./SSMProject.assets/image-20220502151410576.png)
 
    保存退出
 

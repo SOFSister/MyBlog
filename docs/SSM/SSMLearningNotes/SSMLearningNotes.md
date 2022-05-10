@@ -1,6 +1,6 @@
 ---
 title: SSM学习笔记
-date: '2022-05-06 18:07:00'
+date: '2022-05-06'
 sidebar: 'auto'
 categories:
  - SSM
@@ -50,7 +50,7 @@ public class VideoController {
 
 **结果**
 
-![image-20220216011101184](/SSMLearningNotes.assets/image-20220216011101184.png)
+![image-20220216011101184](./SSMLearningNotes.assets/image-20220216011101184.png)
 
 ## **SpringBoot2.X常用的注解**
 
@@ -64,14 +64,14 @@ public class VideoController {
 
 - @SpringBootApplication 作用: 用于标记是SringBoot应用，里面包含多个子注解,即
 
-  ![image-20220216013752823](/SSMLearningNotes.assets/image-20220216013752823.png)
+  ![image-20220216013752823](./SSMLearningNotes.assets/image-20220216013752823.png)
   
 
 ## 一般项目架构搭建
 
-![image-20220216211605705](/SSMLearningNotes.assets/image-20220216211605705.png)
+![image-20220216211605705](./SSMLearningNotes.assets/image-20220216211605705.png)
 
-![image-20220216211640049](/SSMLearningNotes.assets/image-20220216211640049.png)
+![image-20220216211640049](./SSMLearningNotes.assets/image-20220216211640049.png)
 
 ## SpringBoot2.X统一接口返回协议-掌握开发规范
 
@@ -141,7 +141,7 @@ public class JsonData {
 
 ## **SpringBoot配置Jackson处理字段**
 
-![image-20220217013723089](/SSMLearningNotes.assets/image-20220217013723089.png)
+![image-20220217013723089](./SSMLearningNotes.assets/image-20220217013723089.png)
 
 ## **使用@value注解配置文件自动映射到属性和实体类**
 
@@ -231,7 +231,7 @@ public class TestController {
 
 ## **项目里使用SpringBoot2.x的单元测试**
 
-![image-20220217172139920](/SSMLearningNotes.assets/image-20220217172139920-16450897005471.png)
+![image-20220217172139920](./SSMLearningNotes.assets/image-20220217172139920-16450897005471.png)
 
 ## **SpringBoot2.X全局异常处理**
 
@@ -837,7 +837,7 @@ public class AsyncTask {
 
 - 在应用的classpath中创建名称为`log4j.properties`的文件
 
-  ![image-20220221153916904](/SSMLearningNotes.assets/image-20220221153916904.png)
+  ![image-20220221153916904](./SSMLearningNotes.assets/image-20220221153916904.png)
 
   ~~~properties
   log4j.rootLogger=ERROR, stdout
@@ -1490,7 +1490,7 @@ column： 和select查询关联的字段
 
 - 重点：MyISAM不支持事务，如果需要事务则改为innodb引擎 更改数据库的表里面的引擎
 
-![image-20220224210945098](/SSMLearningNotes.assets/image-20220224210945098.png)
+![image-20220224210945098](./SSMLearningNotes.assets/image-20220224210945098.png)
 
 ## **mybatis事务控制**
 
@@ -1844,7 +1844,7 @@ public static void main(String [] args){
 
 结果
 
-![image-20220227104901123](/SSMLearningNotes.assets/image-20220227104901123.png)
+![image-20220227104901123](./SSMLearningNotes.assets/image-20220227104901123.png)
 
 ## Spring5.x后置处理器 BeanPostProcessor
 
@@ -1863,7 +1863,7 @@ public static void main(String [] args){
   调用BeanPostProcessor的postProcessAfterInitialization方法
   ```
 
-  ![image-20220227124108040](/SSMLearningNotes.assets/image-20220227124108040.png)
+  ![image-20220227124108040](./SSMLearningNotes.assets/image-20220227124108040.png)
 
 - 注意：接口重写的两个方法不能返回null，如果返回null那么在后续初始化方法将报空指针异常或者通过getBean()方法获取不到bean实例对象
 
@@ -1989,7 +1989,7 @@ xml
     - 核心关注点：获取播放地址
     - 横切关注点：记录日志、权限认证
 
-  ![image-20220227152334302](/SSMLearningNotes.assets/image-20220227152334302.png)
+  ![image-20220227152334302](./SSMLearningNotes.assets/image-20220227152334302.png)
 
   - 接口业务流程例子
 

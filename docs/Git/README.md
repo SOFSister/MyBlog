@@ -1,6 +1,6 @@
 ---
 title: Git专区
-date: '2022-05-04 23:15:00'
+date: '2022-05-04'
 sidebar: 'auto'
 ---
 
@@ -8,4 +8,4 @@ sidebar: 'auto'
 
 欢迎来到喂羊整理的Git笔记专区，还不去学习我直接**紫砂**。
 
-![image-20220504231135610](/Git.assets/image-20220504231135610.png)
+![image-20220504231135610](./Git.assets/image-20220504231135610.png)
