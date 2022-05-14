@@ -83,6 +83,11 @@ module.exports = {
         "title": "Java全栈知识体系",
         "logo": "/img/friendLink/JavaFullStackKnowledgeSystem.png",
         "link": "https://pdai.tech/"
+      },
+      {
+        "title": "JavaGuide",
+        "logo": "/img/friendLink/JavaGuide.jpg",
+        "link": "https://javaguide.cn/"
       }
     ],
     //关闭404腾讯公益

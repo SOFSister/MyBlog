@@ -44,6 +44,10 @@ module.exports = [{
             "text": "GitHub",
             "link": "https://github.com/SOFSister",
             "icon": "reco-github"
+        },{
+            "text": "CSDN",
+            "link": "https://blog.csdn.net/weixin_48964494?type=blog",
+            "icon": "reco-csdn"
         }]
     }
 ]
