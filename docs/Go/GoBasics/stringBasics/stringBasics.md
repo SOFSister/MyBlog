@@ -1,5 +1,5 @@
 ---
-title: 1.字符串相关常用函数
+title: 1.字符串相关基础知识
 date: '2022-06-01'
 sidebar: 'auto'
 categories:

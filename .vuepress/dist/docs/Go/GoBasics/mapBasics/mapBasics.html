@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5. map基础知识 | feedsheep</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="现在不好好学习以后怎么去异世界当勇者">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.d252283e.css" as="style"><link rel="preload" href="/assets/js/app.27c88f04.js" as="script"><link rel="preload" href="/assets/js/3.c6d46792.js" as="script"><link rel="preload" href="/assets/js/1.1cb9ffe8.js" as="script"><link rel="preload" href="/assets/js/39.01908293.js" as="script"><link rel="prefetch" href="/assets/js/10.d58e60d3.js"><link rel="prefetch" href="/assets/js/11.0654bd08.js"><link rel="prefetch" href="/assets/js/12.1d964e16.js"><link rel="prefetch" href="/assets/js/13.c4541192.js"><link rel="prefetch" href="/assets/js/14.13e2b74f.js"><link rel="prefetch" href="/assets/js/15.73060470.js"><link rel="prefetch" href="/assets/js/16.453b4a23.js"><link rel="prefetch" href="/assets/js/17.f455a2d3.js"><link rel="prefetch" href="/assets/js/18.2d7439ca.js"><link rel="prefetch" href="/assets/js/19.bab24728.js"><link rel="prefetch" href="/assets/js/20.63dd5460.js"><link rel="prefetch" href="/assets/js/21.3532d6c9.js"><link rel="prefetch" href="/assets/js/22.fe9806c6.js"><link rel="prefetch" href="/assets/js/23.b59959a6.js"><link rel="prefetch" href="/assets/js/24.dac55976.js"><link rel="prefetch" href="/assets/js/25.23376ae6.js"><link rel="prefetch" href="/assets/js/26.023f9552.js"><link rel="prefetch" href="/assets/js/27.56ce0bb3.js"><link rel="prefetch" href="/assets/js/28.404db432.js"><link rel="prefetch" href="/assets/js/29.96a8636f.js"><link rel="prefetch" href="/assets/js/30.9bf85840.js"><link rel="prefetch" href="/assets/js/31.8453bb36.js"><link rel="prefetch" href="/assets/js/32.bf93dcc0.js"><link rel="prefetch" href="/assets/js/33.7a47abbf.js"><link rel="prefetch" href="/assets/js/34.03c559ea.js"><link rel="prefetch" href="/assets/js/35.07426441.js"><link rel="prefetch" href="/assets/js/36.da22f8ec.js"><link rel="prefetch" href="/assets/js/37.d6095ada.js"><link rel="prefetch" href="/assets/js/38.4bda9de4.js"><link rel="prefetch" href="/assets/js/4.9118be7c.js"><link rel="prefetch" href="/assets/js/40.fbaa32fc.js"><link rel="prefetch" href="/assets/js/41.08668a5d.js"><link rel="prefetch" href="/assets/js/42.ec0b527f.js"><link rel="prefetch" href="/assets/js/43.7c30e2da.js"><link rel="prefetch" href="/assets/js/44.26f43727.js"><link rel="prefetch" href="/assets/js/5.ebde8174.js"><link rel="prefetch" href="/assets/js/6.fcc95ade.js"><link rel="prefetch" href="/assets/js/7.b2be6908.js"><link rel="prefetch" href="/assets/js/8.946cae2f.js"><link rel="prefetch" href="/assets/js/9.f28a3137.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d252283e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-999d3bb4><div data-v-999d3bb4><div id="loader-wrapper" class="loading-wrapper" data-v-2c578df8 data-v-999d3bb4 data-v-999d3bb4><div class="loader-main" data-v-2c578df8><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div><div data-v-2c578df8></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-067bd032 data-v-999d3bb4 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>feedsheep</h3> <p class="description" data-v-067bd032 data-v-067bd032>现在不好好学习以后怎么去异世界当勇者</p> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-999d3bb4><header class="navbar" data-v-999d3bb4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="feedsheep" class="logo"> <span class="site-name">feedsheep</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Go/" class="nav-link"><i class="undefined"></i>
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gRPC/" class="nav-link"><i class="undefined"></i>
+  gRPC
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/RabbitMQ/" class="nav-link"><i class="undefined"></i>
+  RabbitMQ
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Go/" class="nav-link router-link-active"><i class="undefined"></i>
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/RabbitMQ/" class="nav-link"><i class="undefined"></i>
+  RabbitMQ
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_48964494?type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-999d3bb4></div> <aside class="sidebar" data-v-999d3bb4><div class="personal-info-wrapper" data-v-e2878dae data-v-999d3bb4><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-e2878dae> <h3 class="name" data-v-e2878dae>
+    feedsheep
+  </h3> <div class="num" data-v-e2878dae><div data-v-e2878dae><h3 data-v-e2878dae>34</h3> <h6 data-v-e2878dae>文章</h6></div> <div data-v-e2878dae><h3 data-v-e2878dae>29</h3> <h6 data-v-e2878dae>标签</h6></div></div> <ul class="social-links" data-v-e2878dae></ul> <hr data-v-e2878dae></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Go/" class="nav-link"><i class="undefined"></i>
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/gRPC/" class="nav-link"><i class="undefined"></i>
+  gRPC
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/RabbitMQ/" class="nav-link"><i class="undefined"></i>
+  RabbitMQ
+</a></li><li class="dropdown-item"><!----> <a href="/categories/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/categories/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-suggestion"></i>
+      学习
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/Java/" class="nav-link"><i class="undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Go/" class="nav-link router-link-active"><i class="undefined"></i>
+  Go
+</a></li><li class="dropdown-item"><!----> <a href="/docs/MySQL/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/redis/" class="nav-link"><i class="undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/RabbitMQ/" class="nav-link"><i class="undefined"></i>
+  RabbitMQ
+</a></li><li class="dropdown-item"><!----> <a href="/docs/SSM/" class="nav-link"><i class="undefined"></i>
+  SSM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Unity/" class="nav-link"><i class="undefined"></i>
+  Unity
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      生活
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/PhotoAlbum/" class="nav-link"><i class="undefined"></i>
+  相册
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  归档
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      其他
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SOFSister" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/weixin_48964494?type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/docs/Go/" aria-current="page" class="sidebar-link">Go专区</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Go基础知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/Go/GoBasics/stringBasics/stringBasics.html" class="sidebar-link">1.字符串相关基础知识</a></li><li><a href="/docs/Go/GoBasics/timeBasics/timeBasics.html" class="sidebar-link">2.时间和日期基础知识</a></li><li><a href="/docs/Go/GoBasics/arrayBasics/arrayBasics.html" class="sidebar-link">3.数组基础知识</a></li><li><a href="/docs/Go/GoBasics/sliceBasics/sliceBasics.html" class="sidebar-link">4.切片基础知识</a></li><li><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html" aria-current="page" class="active sidebar-link">5. map基础知识</a></li><li><a href="/docs/Go/GoBasics/object-orientedBasics/object-orientedBasics.html" class="sidebar-link">6. 面向对象基础知识</a></li><li><a href="/docs/Go/GoBasics/fileBasics/fileBasics.html" class="sidebar-link">7.文件操作基础知识</a></li><li><a href="/docs/Go/GoBasics/unitTestingBasics/unitTestingBasics.html" class="sidebar-link">8.单元测试基础知识</a></li><li><a href="/docs/Go/GoBasics/goroutineBasics/goroutineBasics.html" class="sidebar-link">9.协程与信道基础知识</a></li><li><a href="/docs/Go/GoBasics/reflectionBasics/reflectionBasics.html" class="sidebar-link">10.反射基础知识</a></li><li><a href="/docs/Go/GoBasics/tcpCodingBasics/tcpCodingBasics.html" class="sidebar-link">11.tcp编程基础知识</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>gRPC</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-067bd032 data-v-999d3bb4><h3 class="title" data-v-067bd032 data-v-067bd032>5. map基础知识</h3> <!----> <label id="box" class="inputBox" data-v-067bd032 data-v-067bd032><input type="password" value="" data-v-067bd032> <span data-v-067bd032>Konck! Knock!</span> <button data-v-067bd032>OK</button></label> <div class="footer" data-v-067bd032 data-v-067bd032><span data-v-067bd032><i class="iconfont reco-theme" data-v-067bd032></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-067bd032>vuePress-theme-reco</a></span> <span data-v-067bd032><i class="iconfont reco-copyright" data-v-067bd032></i> <a data-v-067bd032><span data-v-067bd032>feedsheep</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-999d3bb4><main class="page"><section><div class="page-title"><h1 class="title">5. map基础知识</h1> <div data-v-10e19382><i class="iconfont reco-account" data-v-10e19382><span data-v-10e19382>feedsheep</span></i> <i class="iconfont reco-date" data-v-10e19382><span data-v-10e19382>2022/6/22</span></i> <!----> <i class="tags iconfont reco-tag" data-v-10e19382><span class="tag-item" data-v-10e19382>Go</span><span class="tag-item" data-v-10e19382>map</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="_5-map"><a href="#_5-map" class="header-anchor">#</a> 5. map</h2> <h3 id="_5-1-map基本语法"><a href="#_5-1-map基本语法" class="header-anchor">#</a> 5.1 map基本语法</h3> <p><strong>var map 变量名[keytype]valuetype</strong></p> <ul><li><p>keytype可以是什么类型</p> <p>golang中的map,的key可以是很多种类型，比如bool,数字，string,指针，channel,还可以是只
+包含前面几个类型的接口，结构体，数组
+通常key为int、string
+注意：slice,map还有function不可以，因为这几个没法用一来判断</p></li> <li><p>valuetype可以是什么类型</p> <p>valuetype的类型和key基本一样
+通常为：数字(整数，浮点数),string,map,struct</p></li></ul> <h3 id="_5-2-map声明"><a href="#_5-2-map声明" class="header-anchor">#</a> 5.2 map声明</h3> <p>注意：声明是不会分配内存的，初始化需要mke,分配内存后才能赋值和使用。</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">//map声明</span>
+	<span class="token keyword">var</span> mp <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span>
+	<span class="token comment">//在使用map前，需要先make给map分配数据空间</span>
+	mp <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;feedSheep1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;wyy1&quot;</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;feedSheep2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;wyy2&quot;</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;feedSheep3&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;wyy3&quot;</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;feedSheep4&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;wyy4&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>mp<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><blockquote><ol><li>map在使用前一定要make</li> <li>map的key是不能重复的，如果重复了，则以最后这个key-value为准</li> <li>map的value是可以相同的</li> <li>map的key-value是无序的</li></ol></blockquote> <h3 id="_5-3-map的使用"><a href="#_5-3-map的使用" class="header-anchor">#</a> 5.3 map的使用</h3> <ol><li><p>方式1</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">//map声明</span>
+	<span class="token keyword">var</span> mp <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span>
+	<span class="token comment">//在使用map前，需要先make给map分配数据空间</span>
+	mp <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;no1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;宋江&quot;</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;吴用&quot;</span>
+	mp<span class="token punctuation">[</span><span class="token string">&quot;no3&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;武松&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>mp<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></li> <li><p>方式2</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	cities <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;北京&quot;</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;天津&quot;</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no3&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;上海&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>cities<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li> <li><p>方式3</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	heros <span class="token operator">:=</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span>
+		<span class="token string">&quot;hero1&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;宋江&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;hero2&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;卢俊义&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;hero3&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;吴用&quot;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	heros<span class="token punctuation">[</span><span class="token string">&quot;hero4&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;林冲&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>heros<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li></ol> <blockquote><p><strong>其他</strong></p> <p>二维map：例如map[string]map[string]string</p></blockquote> <h3 id="_5-4-map的增删改查"><a href="#_5-4-map的增删改查" class="header-anchor">#</a> 5.4 map的增删改查</h3> <ol><li><p>map增加和更新</p> <p>如果key还没有，就是增加，如果key存在就是修改。</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	cities <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+    <span class="token comment">//增</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;北京&quot;</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;天津&quot;</span>
+    <span class="token comment">//改</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;上海&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>cities<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li> <li><p>map删除</p> <p>delete(map,&quot;key&quot;),delete是一个内置函数，如果key存在，就删除该key-value,.如果key不存在，
+不操作，但是也不会报错</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	cities <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;北京&quot;</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;天津&quot;</span>
+	<span class="token comment">//删</span>
+	<span class="token function">delete</span><span class="token punctuation">(</span>cities<span class="token punctuation">,</span> <span class="token string">&quot;no1&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>cities<span class="token punctuation">)</span> <span class="token comment">//map[no2:天津]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><blockquote><p>如果我们要删除map的所有key,没有一个专门的方法一次删除，可以遍历一下key,逐个删除
+或者map=make(...),make一个新的，让原来的成为垃圾，被gc回收</p></blockquote></li> <li><p>map查找</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	cities <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	cities<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;天津&quot;</span>
+
+	val<span class="token punctuation">,</span> ok <span class="token operator">:=</span> cities<span class="token punctuation">[</span><span class="token string">&quot;no2&quot;</span><span class="token punctuation">]</span>
+	<span class="token keyword">if</span> ok <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;有no2 key 值为%v&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;没有no2 key&quot;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>如果map中存在key，那么findRes就会返回true，否则返回false</p></li></ol> <h3 id="_5-5-map的遍历"><a href="#_5-5-map的遍历" class="header-anchor">#</a> 5.5 map的遍历</h3> <p>map的遍历使用for-range的结构遍历</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	students <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu01&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu01&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;tom&quot;</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu01&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;男&quot;</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu01&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;address&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;北京长安街&quot;</span>
+
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu02&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu02&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;mary&quot;</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu02&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;女&quot;</span>
+	students<span class="token punctuation">[</span><span class="token string">&quot;stu02&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;address&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;上海黄浦江&quot;</span>
+
+    <span class="token comment">//遍历</span>
+	<span class="token keyword">for</span> k1<span class="token punctuation">,</span> v1 <span class="token operator">:=</span> <span class="token keyword">range</span> students <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;k1=&quot;</span><span class="token punctuation">,</span> k1<span class="token punctuation">)</span>
+		<span class="token keyword">for</span> k2<span class="token punctuation">,</span> v2 <span class="token operator">:=</span> <span class="token keyword">range</span> v1 <span class="token punctuation">{</span>
+			fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;\t k2=%v v2=%v\n&quot;</span><span class="token punctuation">,</span> k2<span class="token punctuation">,</span> v2<span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_5-6-map切片"><a href="#_5-6-map切片" class="header-anchor">#</a> 5.6 map切片</h3> <p>切片的数据类型如果是map,则我们称为slice of map,map切片，这样使用则map个数就可以动
+态变化了。</p> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">/*
+		使用一个map来记录monster的信息 name 和 age
+		也就是说一个monster对应一个map，并且妖怪的个数可以动态的增加
+	*/</span>
+	<span class="token comment">//1.声明一个map切片</span>
+	monsters <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">//准备放入两个妖怪</span>
+	<span class="token comment">//2.增加妖怪信息</span>
+	<span class="token keyword">if</span> monsters<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		monsters<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+		monsters<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;牛魔王&quot;</span>
+		monsters<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;500&quot;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> monsters<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		monsters<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+		monsters<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;玉兔精&quot;</span>
+		monsters<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;400&quot;</span>
+	<span class="token punctuation">}</span>
+
+	newMonster <span class="token operator">:=</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span>
+		<span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;火云邪神&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;age&quot;</span><span class="token punctuation">:</span>  <span class="token string">&quot;200&quot;</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+	monsters <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>monsters<span class="token punctuation">,</span> newMonster<span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>monsters<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h3 id="_5-7-map排序"><a href="#_5-7-map排序" class="header-anchor">#</a> 5.7 map排序</h3> <ol><li>golang中没有一个专门的方法针对map的key进行排序</li> <li>golang中的map默认是无序的，也不是按照添加的顺序存放的，每次遍历，得到的输出可能不一样</li> <li>golang中map的排序，是先将key进行排序，然后根据key值遍历输出</li></ol> <div class="language-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;sort&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	mp <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+	mp<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">10</span>
+	mp<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+	mp<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span>
+	mp<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span>
+	mp<span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span>
+
+	<span class="token keyword">var</span> keys <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span>
+	<span class="token keyword">for</span> k<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> <span class="token keyword">range</span> mp <span class="token punctuation">{</span>
+		keys <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>keys<span class="token punctuation">,</span> k<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	sort<span class="token punctuation">.</span><span class="token function">Ints</span><span class="token punctuation">(</span>keys<span class="token punctuation">)</span>
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> v <span class="token operator">:=</span> <span class="token keyword">range</span> keys <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;key=%v value=%v\n&quot;</span><span class="token punctuation">,</span> v<span class="token punctuation">,</span> mp<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_5-8-map使用细节"><a href="#_5-8-map使用细节" class="header-anchor">#</a> 5.8 map使用细节</h3> <ol><li>map是引用类型，遵守引用类型传递的机制，在一个函数接收map,修改后，会直接修改原来的map</li> <li>map的容量达到后，再想map增加元素，会自动扩容，并不会发生panic,也就是说map能动
+态的增长键值对(key-value)</li></ol></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/Go/GoBasics/sliceBasics/sliceBasics.html" class="prev">
+            4.切片基础知识
+          </a></span> <span class="next"><a href="/docs/Go/GoBasics/object-orientedBasics/object-orientedBasics.html">
+            6. 面向对象基础知识
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-92abcef6><li class="level-2" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-map" class="sidebar-link reco-side-_5-map" data-v-92abcef6>5. map</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-1-map基本语法" class="sidebar-link reco-side-_5-1-map基本语法" data-v-92abcef6>5.1 map基本语法</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-2-map声明" class="sidebar-link reco-side-_5-2-map声明" data-v-92abcef6>5.2 map声明</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-3-map的使用" class="sidebar-link reco-side-_5-3-map的使用" data-v-92abcef6>5.3 map的使用</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-4-map的增删改查" class="sidebar-link reco-side-_5-4-map的增删改查" data-v-92abcef6>5.4 map的增删改查</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-5-map的遍历" class="sidebar-link reco-side-_5-5-map的遍历" data-v-92abcef6>5.5 map的遍历</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-6-map切片" class="sidebar-link reco-side-_5-6-map切片" data-v-92abcef6>5.6 map切片</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-7-map排序" class="sidebar-link reco-side-_5-7-map排序" data-v-92abcef6>5.7 map排序</a></li><li class="level-3" data-v-92abcef6><a href="/docs/Go/GoBasics/mapBasics/mapBasics.html#_5-8-map使用细节" class="sidebar-link reco-side-_5-8-map使用细节" data-v-92abcef6>5.8 map使用细节</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a008c6ba data-v-a008c6ba><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a008c6ba><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a008c6ba></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a008c6ba></path></svg></div><div class="reco-bgm-panel" data-v-2940e5b8><audio id="bgm" src="/audio/RunAground.mp3" data-v-2940e5b8></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><img src="/img/music/RunAground.jpg" data-v-2940e5b8></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="reco-bgm-cover" style="background-image:url(/img/music/RunAground.jpg);" data-v-2940e5b8><div class="mini-operation" style="display:none;" data-v-2940e5b8><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-2940e5b8></i></div> <div class="falut-message" style="display:none;" data-v-2940e5b8>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-music music" data-v-2940e5b8></i>搁浅</div> <div class="info-box" data-v-2940e5b8><i class="reco-bgm reco-bgm-artist" data-v-2940e5b8></i>周杰伦 / 七里香</div> <div class="reco-bgm-progress" data-v-2940e5b8><div class="progress-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div> <div class="reco-bgm-operation" data-v-2940e5b8><i class="reco-bgm reco-bgm-last last" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-play play" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-next next" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-2940e5b8></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-2940e5b8></i> <div class="volume-bar" data-v-2940e5b8><div class="bar" data-v-2940e5b8></div></div></div></div> <div class="reco-bgm-left-box" data-v-2940e5b8 data-v-cc4d9216 data-v-2940e5b8><i class="reco-bgm reco-bgm-left" data-v-2940e5b8></i></div></div></div><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.27c88f04.js" defer></script><script src="/assets/js/3.c6d46792.js" defer></script><script src="/assets/js/1.1cb9ffe8.js" defer></script><script src="/assets/js/39.01908293.js" defer></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-title: 2.时间和日期相关函数
+title: 2.时间和日期基础知识
 date: '2022-06-01'
 sidebar: 'auto'
 categories:

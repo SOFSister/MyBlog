@@ -7,6 +7,22 @@ module.exports = {
             children: [
                 '/docs/Go/GoBasics/stringBasics/stringBasics.md',
                 '/docs/Go/GoBasics/timeBasics/timeBasics.md',
+                '/docs/Go/GoBasics/arrayBasics/arrayBasics.md',
+                '/docs/Go/GoBasics/sliceBasics/sliceBasics.md',
+                '/docs/Go/GoBasics/mapBasics/mapBasics.md',
+                '/docs/Go/GoBasics/object-orientedBasics/object-orientedBasics.md',
+                '/docs/Go/GoBasics/fileBasics/fileBasics.md',
+                '/docs/Go/GoBasics/unitTestingBasics/unitTestingBasics.md',
+                '/docs/Go/GoBasics/goroutineBasics/goroutineBasics.md',
+                '/docs/Go/GoBasics/reflectionBasics/reflectionBasics.md',
+                '/docs/Go/GoBasics/tcpCodingBasics/tcpCodingBasics.md',
+            ]
+        },
+        {
+            title:'gRPC',
+            collapsable: true,
+            children: [
+                '/docs/Go/gRPc/gRPCBasics/gRPCBasics.md',
             ]
         }
     ],

@@ -89,6 +89,42 @@ module.exports = {
         "logo": "/img/friendLink/JavaGuide.jpg",
         "link": "https://javaguide.cn/"
       }
+      ,
+      {
+        "title": "Go语言标准库文档中文版",
+        "logo": "/img/friendLink/goStandardLibraryDocumentation.jpg",
+        "link": "https://studygolang.com/pkgdoc"
+      }
+      ,
+      {
+        "title": "GORM中文文档",
+        "logo": "/img/friendLink/GORMChineseDocument.jpg",
+        "link": "https://learnku.com/docs/gorm/v2"
+      }
+      ,
+      {
+        "title": "gRPC文档",
+        "logo": "/img/friendLink/gRPC.jpg",
+        "link": "https://www.grpc.io/docs/languages/go/quickstart/"
+      }
+      ,
+      {
+        "title": "ProtocolBuffers文档",
+        "logo": "/img/friendLink/protocolBuffers.jpg",
+        "link": "https://developers.google.cn/protocol-buffers/docs/proto3"
+      }
+      ,
+      {
+        "title": "(谷歌API设计指南)中文版",
+        "logo": "/img/friendLink/GoogleApiDesignGuide.jpg",
+        "link": "https://www.bookstack.cn/read/API-design-guide/API-design-guide-README.md"
+      }
+      ,
+      {
+        "title": "Linux命令大全",
+        "logo": "/img/friendLink/LinuxCommand.jpg",
+        "link": "https://www.linuxcool.com/"
+      }
     ],
     //关闭404腾讯公益
     noFoundPageByTencent: false,
