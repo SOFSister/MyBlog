@@ -10,8 +10,17 @@ module.exports = [{
             "text": "Java",
             "link": "/docs/Java/"
         }, {
+            "text": "Go",
+            "link": "/docs/Go/"
+        },{
             "text": "MySQL",
             "link": "/docs/MySQL/"
+        }, {
+            "text": "redis",
+            "link": "/docs/redis/"
+        }, {
+            "text": "RabbitMQ",
+            "link": "/docs/RabbitMQ/"
         }
         , {
             "text": "SSM",

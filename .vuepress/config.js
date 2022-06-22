@@ -107,6 +107,9 @@ module.exports = {
     "authorAvatar": "/avatar.jpg",
     // 备案号
     "record": "浙ICP备2022013822号",
+    "recordLink": "https://beian.miit.gov.cn/",
+    "cyberSecurityRecord": "浙公网安备 33011002016430号",
+    "cyberSecurityLink": "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016430",
     // 项目开始时间
     "startYear": "2022",
     /**
