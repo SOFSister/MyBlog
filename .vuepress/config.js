@@ -249,13 +249,13 @@ module.exports = {
         }
       }
     ],
-    [
-      'copyright',
-      {
-        authorName: 'feedsheep', // 选中的文字将无法被复制
-        minLength: 30, // 如果长度超过  30 个字符
-      }
-    ],
+    // [
+    //   'copyright',
+    //   {
+    //     authorName: 'feedsheep', // 选中的文字将无法被复制
+    //     minLength: 30, // 如果长度超过  30 个字符
+    //   }
+    // ],
     ['@vuepress/active-header-links', {
       sidebarLinkSelector: '.sidebar-link',
       headerAnchorSelector: '.header-anchor'

@@ -18,6 +18,9 @@ module.exports = [{
         }, {
             "text": "redis",
             "link": "/docs/redis/"
+        },{
+            "text": "docker",
+            "link": "/docs/docker/"
         }, {
             "text": "RabbitMQ",
             "link": "/docs/RabbitMQ/"
@@ -28,6 +31,9 @@ module.exports = [{
         }, {
             "text": "Git",
             "link": "/docs/Git/"
+        }, {
+            "text": "Linux",
+            "link": "/docs/Linux/"
         }, {
             "text": "Unity",
             "link": "/docs/Unity/"

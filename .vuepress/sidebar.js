@@ -39,6 +39,10 @@ module.exports = {
         "",
         '/docs/redis/install/install',
     ],
+    "/docs/docker/": [
+        "",
+        '/docs/docker/dockerBasics/command.md',
+    ],
     "/docs/RabbitMQ/": [
         "",
         '/docs/RabbitMQ/install/install',
@@ -71,6 +75,20 @@ module.exports = {
     "/docs/Git/": [
         "",
         '/docs/Git/GitGrammar/GitGrammar',
+    ],
+    "/docs/Linux/": [
+        "",
+        '/docs/Linux/FolderStructure.md',
+        '/docs/Linux/VI&VIM.md',
+        {
+            title:'Linux常用命令',
+            collapsable: true,
+            children: [
+                '/docs/Linux/commandBasics/HelpCommand.md',
+                '/docs/Linux/commandBasics/FileDirectoryCommand.md',
+                '/docs/Linux/commandBasics/TimeDateCommand.md',
+            ]
+        },
     ],
     "/docs/Unity/": [
         "",
